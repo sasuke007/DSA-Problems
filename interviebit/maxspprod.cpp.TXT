@@ -1,0 +1,88 @@
+
+
+You are given an array A containing N integers. The special product of each ith integer in this array is defined as the product of the following:<ul>
+
+LeftSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i] (i>j). If multiple A[j]’s are present in multiple positions, the LeftSpecialValue is the maximum value of j.
+
+RightSpecialValue: For an index i, it is defined as the index j such that A[j]>A[i] (j>i). If multiple A[j]s are present in multiple positions, the RightSpecialValue is the minimum value of j.
+
+Write a program to find the maximum special product of any integer in the array.
+
+Input: You will receive array of integers as argument to function.
+
+Return: Maximum special product of any integer in the array modulo 1000000007.
+
+Note: If j does not exist, the LeftSpecialValue and RightSpecialValue are considered to be 0.
+
+Constraints 1 <= N <= 10^5 1 <= A[i] <= 10^9
+
+
+**************************************************************************************
+
+Solution:-
+
+
+void display(vector<int> &nums){
+    for(int num:nums){
+        cout<<num<<" ";
+    }
+    cout<<endl;
+}
+vector<int> special_values(vector<int> &nums){
+    int n=nums.size();
+    vector<int> special(n,-1);
+    stack<pair<int,int> > store;
+    for(int i=0;i<nums.size();++i){
+        int val=nums[i];
+        if(store.empty()){
+            store.push({val,i});
+        }
+        else{
+            int top=store.top().first;
+            int index=store.top().second;
+            if(val<top){
+                special[i]=index;
+                store.push({val,i});
+            }
+            else{
+                while(!store.empty() and store.top().first<=val){
+                    store.pop();
+                }
+                if(!store.empty()){
+                    special[i]=store.top().second;
+                }
+                store.push({val,i});
+            }
+        }
+    }
+    return special;
+}
+int Solution::maxSpecialProduct(vector<int> &nums) {
+    int n=nums.size();
+    int mod=1e9+7;
+    vector<int> left_special=special_values(nums);
+    for(int i=0;i<n;++i){
+        if(left_special[i]==-1){
+            left_special[i]=0;
+        }
+    }
+    reverse(nums.begin(),nums.end());
+    vector<int> right_special=special_values(nums);
+    reverse(right_special.begin(),right_special.end());
+    for(int i=0;i<n;++i){
+        if(right_special[i]==-1){
+            right_special[i]=0;
+        }
+        else{
+            right_special[i]=n-1-right_special[i];
+        }
+    }
+    //display(left_special);
+    //display(right_special);
+    int ans=0;
+    for(int i=0;i<n;++i){
+        int val=((left_special[i]%mod)*1ll*(right_special[i]%mod))%mod;
+        ans=max(ans,val);
+    }
+    return ans%mod;
+}
