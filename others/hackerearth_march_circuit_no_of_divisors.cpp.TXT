@@ -1,0 +1,107 @@
+You are given two numbers n and k. For each number in the interval [1, n], your task is to calculate its largest divisor that is not divisible by k. Print the sum of these divisors.
+
+Note: k is a prime number.
+
+Input format
+
+    The first line contains an integer T representing the number of test cases that will follow.
+    Each test case consists of one line containing two integers n and k.
+
+Output format
+
+The output must contain the answer for each test case on a different line.
+
+Each answer consists of a single integer.
+
+Constraints
+
+
+ 
+SAMPLE INPUT
+
+4
+10 3
+10 2
+10 5
+1000000000 97
+
+SAMPLE OUTPUT
+
+41
+36
+43
+494897959532893312
+
+**************************************************************************************
+
+#include <bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <map>
+#include <algorithm>
+#include <unordered_map>
+#include <cmath>
+#include <chrono>
+#include <unordered_set>
+#include <bitset>
+#include <numeric>
+#include <cmath>
+#include <set>
+#include <list>
+#include <stack>
+#include <queue>
+using namespace std;
+#define endl "\n"
+#define ll long long
+int inf = 1e9 + 7;
+int ninf = -inf;
+int mod = 998244353;
+long long _pow(int base,int exp){
+  if(exp==0){
+    return 1;
+  }
+  if(exp==1){
+    return base;
+  }
+  long long temp=_pow(base,exp/2);
+  temp*=temp;
+  if(exp&1) 
+    temp*=base;
+  return temp;
+}
+ll solve(int n,int k,int depth){
+  if(n/_pow(k,depth)==0){
+    return 0;
+  }
+  ll mul=_pow(k,depth+1);
+  ll sum=0;
+  if(n/mul!=0){
+    ll first_multiple=mul;
+    ll last_multiple=(n/mul)*mul;
+    ll no_terms=(last_multiple-first_multiple)/mul+1;
+    sum=(first_multiple+last_multiple)*no_terms/2;
+  }
+  ll curr_pow=_pow(k,depth);
+  ll terms=n/curr_pow;
+  ll curr_sum=((terms*(terms+1))/2)*curr_pow;
+  ll val=(curr_sum-sum)/curr_pow;
+  return val+solve(n,k,depth+1);
+}
+int main(){
+  ios_base::sync_with_stdio(0);
+  cin.tie(0);
+#ifdef _DEBUG
+  FILE *fp;
+  freopen("input.txt", "r", stdin);
+  freopen("output.txt", "w", stdout);
+#endif
+  int tc;
+  cin>>tc;
+  while(tc--){
+    int n,k;
+    cin>>n>>k;
+    cout<<solve(n,k,0)<<endl;
+  }
+  cout<<endl;
+}
