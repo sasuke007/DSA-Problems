@@ -1,0 +1,100 @@
+Programming Binary Search Median Of Array 
+
+Median of Array
+
+    Asked in:  
+    Amazon
+    VMWare
+    Google
+    Microsoft
+    Goldman Sachs
+
+There are two sorted arrays A and B of size m and n respectively.
+
+Find the median of the two sorted arrays ( The median of the array formed by merging both the arrays ).
+
+The overall run time complexity should be O(log (m+n)).
+
+Sample Input
+
+A : [1 4 5]
+B : [2 3]
+
+Sample Output
+
+3
+
+    NOTE: IF the number of elements in the merged array is even, then the median is the average of n / 2 th and n/2 + 1th element.
+    For example, if the array is [1 2 3 4], the median is (2 + 3) / 2.0 = 2.5 
+
+
+
+**************************************************************************************
+
+
+Solution:-
+
+double compute_median(int a,int b,int c,int d,int n,int m){
+    double ans=0;
+    if((n+m)&1)
+        ans=max(a,b);
+    else
+        ans=(max(a,b)+min(c,d))/2.0;
+    return ans;
+}
+double solve(const vector<int> &b_arr,const vector<int> &o_arr){
+    int n=b_arr.size();
+    int m=o_arr.size();
+    int low=0,high=n;
+    double ans=0;
+    int inf=1e9+7;
+    int ninf=-inf;
+    while(low<=high){
+        int i=low+(high-low)/2;
+        int j=(n+m+1)/2-i;
+        int i_first=(i==0?ninf:b_arr[i-1]);
+        int i_last=(i==n?inf:b_arr[i]);
+        int j_first=(j==0?ninf:o_arr[j-1]);
+        int j_last=(j==m?inf:o_arr[j]);
+        if((i_first<=j_last) and (j_first<=i_last)){
+            ans=compute_median(i_first,j_first,i_last,j_last,n,m);
+            break;
+        }
+        else if(i_first>j_last){
+            high=i-1;
+        }
+        else{
+            //verify if there are any other conditions
+            low=i+1;
+        }
+    }
+    return ans;
+}
+double Solution::findMedianSortedArrays(const vector<int> &A, const vector<int> &B) {
+    int n=A.size();
+    int m=B.size();
+    double ans=0;
+    if(n==0 and m==0)
+        return ans;
+    if(n==0){
+        if(m&1){
+            return B[m/2];
+        }
+        else{
+            return (B[m/2]+B[m/2-1])/2.0;
+        }
+    }
+    if(m==0){
+        if(n&1){
+            return A[n/2];
+        }
+        else{
+            return (A[n/2]+A[n/2-1])/2.0;
+        }
+    }
+    if(n<=m)
+        ans=solve(A,B);
+    else
+        ans=solve(B,A);
+    return ans;
+}
