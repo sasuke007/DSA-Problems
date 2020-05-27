@@ -1,0 +1,94 @@
+Shortest common supersequence
+
+Given two strings A and B, find the shortest string that has both A and B as subsequences.
+If multiple answers exist, you may return any of them.
+
+Note: A string S is a subsequence of string T if deleting some number of characters from T (possibly 0, and the characters are chosen anywhere from T) results in the string S.
+
+Input Format:
+
+First line contains a single integer T denoting the number of test cases.
+T lines follow each containing two space separated strings A B
+
+Output Format:
+
+Print T lines each containing a single string.
+Note: The string should only contain lower case english alphabets.
+
+Constraints:
+
+1 ≤ T ≤ 10000
+1 ≤ |A|,|B| ≤ 1000
+sum of |A| * |B| over all test cases does not exceed 10^7
+
+For Example:
+
+Input 1:
+    2
+    abcd bcde
+    xyz abc
+Output 1:
+    abcde
+    axbyzc
+Explanation:
+    string abcde has both abcd and bcde as subsequence and also has minimum length. For second test case you can also print abcxyz or any other string that follow all condition.
+
+**************************************************************************************
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()  {
+    int tc;
+    cin>>tc;
+    while(tc--){
+        string a,b;
+        cin>>a>>b;
+        int n=a.size();
+        int m=b.size();
+        vector<vector<int> > scs(n+1,vector<int>(m+1,0));
+        scs[0][0]=1;
+        for(int i=1;i<=n;++i){
+            for(int j=1;j<=m;++j){
+                if(a[i-1]==b[j-1]){
+                    scs[i][j]=1+scs[i-1][j-1];
+                }
+                else{
+                    scs[i][j]=max(scs[i-1][j],scs[i][j-1]);
+                }
+            }
+        }
+        string ans;
+        int i=n,j=m;
+        while(i>0 and j>0){
+            if(a[i-1]==b[j-1]){
+                ans=a[i-1]+ans;
+                --i;
+                --j;
+            }
+            else{
+                int up=scs[i-1][j];
+                int left=scs[i][j-1];
+                if(up<=left){
+                    ans=b[j-1]+ans;
+                    j--;
+                }
+                else{
+                    ans=a[i-1]+ans;
+                    --i;
+                }
+            }
+        }
+        while(i>0){
+            ans=a[i-1]+ans;
+            --i;
+        }
+        while(j>0){
+            ans=b[j-1]+ans;
+            --j;
+        }
+        cout<<ans<<endl;
+    }
+    return 0;
+}
