@@ -1,0 +1,47 @@
+Remove Duplicates from Sorted Array II
+
+Remove Duplicates from Sorted Array
+
+Given a sorted array, remove the duplicates in place such that each element can appear atmost twice and return the new length.
+
+Do not allocate extra space for another array, you must do this in place with constant memory.
+
+Note that even though we want you to return the new length, make sure to change the original array as well in place
+
+For example, Given input array A = [1,1,1,2],
+
+Your function should return length = 3, and A is now [1,1,2].
+
+
+
+**************************************************************************************
+
+solution:-
+
+
+	int Solution::removeDuplicates(vector<int> &A) {
+    int n=A.size();
+    int prev=A[0];
+    int count=0;
+    int overwrite_pointer=0;
+    for(int i=0;i<n;++i){
+        if(A[i]==prev){
+            ++count;
+        }
+        else{
+            int temp=0;
+            while(temp++<min(count,2)){
+                A[overwrite_pointer]=prev;
+                ++overwrite_pointer;
+            }
+            prev=A[i];
+            count=1;
+        }
+    }
+    int temp=0;
+    while(temp++<min(count,2)){
+        A[overwrite_pointer]=prev;
+        ++overwrite_pointer;
+    }
+    return overwrite_pointer;
+}
