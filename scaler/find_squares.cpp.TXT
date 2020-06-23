@@ -1,0 +1,88 @@
+Find Squares
+
+You are given an integer N, you are supposed to convert it to a positive square by performing some steps.
+
+A step is defined as: Remove any digit present in the number N, so that the number remains a positive integer without leading zeroes.
+
+Return the minimum number of steps needed to convert a number to a positive square. If it is not possible to make a positive square by repeatedly performing steps, return -1.
+
+Constraints:
+
+1 <= N <= 2*10^9
+
+Input:
+
+N : An Integer without any leading zeroes.
+
+Output:
+
+Minimum number of steps needed to convert N to a perfect positive square. If not possible, return -1.
+
+Example:
+
+Input: 
+309
+
+Output:
+2
+
+Here, removing 2 digits, second and then first (0 and 3), makes N a perfect positive square (9).
+
+
+Input: 
+36
+
+Output:
+0
+
+36 is already a perfect positive square, no need of removing any digits.
+
+Input: 
+87
+
+Output:
+-1
+
+It isn't possible to make a perfect positive square through any combination of steps, hence -1.
+
+
+**************************************************************************************
+
+Solution:-
+	string strip_leading_zeros(string &no){
+    int i=0;
+    int n=no.size();
+    while(no[i]=='0')
+        ++i;
+    return no.substr(i,n-i);
+}
+bool perfect_square(string &new_no){
+    new_no=strip_leading_zeros(new_no);
+    if(new_no=="")
+        return false;
+    int no=stoi(new_no);
+    return sqrt(no)-int(sqrt(no))==0;
+}
+int Solution::solve(int A) {
+    string no=to_string(A);
+    //cout<<no<<endl;
+    int n=no.size();
+    int inf=1e9+7;
+    int min_moves=inf;
+    for(int i=1;i<(1<<n);++i){
+        string new_no;
+        int bits=log2(i)+1;
+        for(int j=0;j<bits;++j){
+            if(i&(1<<j)){
+                new_no=new_no+no[j];
+                //cout<<new_no<<endl;
+                if(perfect_square(new_no)){
+                    int moves=n-new_no.size();
+                    min_moves=min(moves,min_moves);
+                }
+            }
+        }
+    }
+    return (min_moves!=inf?min_moves:-1);
+}
+
