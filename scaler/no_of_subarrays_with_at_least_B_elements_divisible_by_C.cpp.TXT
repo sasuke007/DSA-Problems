@@ -1,0 +1,74 @@
+Number of subarray with atleast B element divided by C.
+
+Problem Description
+Given an integer array A, find the count of subarrays of A such that atleast B elements in subarray are divisible by C.
+
+
+Problem Constraints
+
+    1 <= |A|,B <= 60000
+    1 <= A[i],C <= 10^9 
+
+
+
+Input Format
+First argument of input contains an integer array A Second argument of input contains an integer B Third argument of input contains integer C
+
+
+Output Format
+Return a single integer denoting the answer.
+
+
+Example Input
+Input 1:
+
+    A = [1, 4, 10], B = 1, C = 2
+
+Input 2:
+
+    A = [14, 1, 5, 4], B = 2, C = 1
+
+
+
+Example Output
+Output 1:
+
+5
+
+Output 2:
+
+6
+
+
+
+Example Explanation
+Explanation 1:
+
+    Subarrays are: [1, 4], [1, 4, 10], [4], [4, 10], [10]
+
+
+**************************************************************************************
+
+int Solution::solve(vector<int>& A, int B, int C) {
+    int n=A.size();
+    vector<int> divisible_elements;
+    for(int i=0;i<n;++i){
+        if(A[i]%C==0){
+            divisible_elements.push_back(i);
+        }
+    }
+    int no_subarrays=0;
+    if(divisible_elements.size()<B)
+        return no_subarrays;
+    int i=0,j=B-1;
+    int k=divisible_elements.size();
+    while(j<k){
+        int left=divisible_elements[i];
+        int right=(j+1<k?divisible_elements[j+1]-1:n-1)-divisible_elements[j];
+        //cout<<i<<" "<<left<<" "<<right;
+        no_subarrays+=(left+1)*(right+1);
+        ++i;
+        ++j;
+    }
+    return no_subarrays;
+}
