@@ -1,0 +1,126 @@
+Min Cost Path
+
+Problem Description
+
+You are given a A*B character matrix named C. Every cell in C has a character U,R,L or D indicating up,right,left and down.
+
+Your target is to go from top left corner to the bottom right corner of the matrix.
+
+But there are some restrictions while moving along the matrix:
+
+    If you follow what is written in the cell then you can move freely.
+    But if you don't follow what is written in the cell then you have to pay 1 unit of cost.
+
+Like: If a cell contains character U and you go right instead of Up you have to pay 1 unit of cost.
+
+So your task is to find the minimum cost to go from top-left corner to the bottom-right corner.
+
+
+
+Problem Constraints
+
+    1 <= A,B <= 103
+    C[i][j] can be either U,R,L or D.
+
+
+
+Input Format
+
+    First Argument represents a integer A (number of rows).
+    Second Argument represents a integer B (number of columns).
+    Third Argument represents a string array C which contains A strings each of length B.
+
+
+
+Output Format
+
+Return an integer denoting the minimum cost to travel from top-left corner to bottom-right corner.
+
+
+Example Input
+
+Input:1
+
+ A = 3
+ B = 3
+ C = ["RRR","DDD","UUU"]
+
+Input:2
+
+ A = 1
+ B = 4
+ C = ["LLLL"]
+
+
+
+Example Output
+
+Output-1 :
+
+ 1
+ 
+
+Output-2 :
+
+ 3
+
+
+
+Example Explanation
+
+Explanation for Input-1:
+
+ Matrix looks like: RRR
+                    DDD
+                    UUU
+ We go right two times and down two times.
+ So from top-right cell we are going down though right is given so this incurs a cost of 1.
+
+Explanation for Input-2:
+
+ Matrix looks like: LLLL
+ We go right three times.
+
+
+
+**************************************************************************************
+
+
+int add_cost(vector<string> &maze,int x,int y,int n_x,int n_y){
+    if(maze[x][y]=='L' and n_x==x and n_y==y-1)
+        return 0;
+    if(maze[x][y]=='R' and x==n_x and y+1==n_y)
+        return 0;
+    if(maze[x][y]=='U' and x-1==n_x and y==n_y)
+        return 0;
+    if(maze[x][y]=='D' and x+1==n_x and y==n_y)
+        return 0;
+    return 1;
+}
+int Solution::solve(int row, int col, vector<string> &maze) {
+    int inf=1e9+7;
+    vector<vector<int> > cost(row,vector<int>(col,inf));
+    priority_queue<pair<int,pair<int,int> > ,vector<pair<int,pair<int,int> > > , greater<pair<int,pair<int,int> > > > min_heap;
+    cost[0][0]=0;
+    min_heap.push({0,{0,0}});
+    vector<int> dx={0,0,1,-1};
+    vector<int> dy={-1,1,0,0};
+    while(!min_heap.empty()){
+        pair<int,pair<int,int> > node=min_heap.top();
+        min_heap.pop();
+        int val=node.first;
+        int x=node.second.first;
+        int y=node.second.second;
+        for(int i=0;i<4;++i){
+            int t_x=x+dx[i];
+            int t_y=y+dy[i];
+            int c=val+add_cost(maze,x,y,t_x,t_y);
+            if(t_x>=0 and t_x<row and t_y>=0 and t_y<col and cost[t_x][t_y]>c){
+                //cout<<"val "<<val<<" c "<<c<<" x "<<t_x<<" y "<<t_y<<endl;
+                cost[t_x][t_y]=c;
+                min_heap.push({c,{t_x,t_y}});
+            }
+        }
+    }
+    return cost[row-1][col-1];
+}
