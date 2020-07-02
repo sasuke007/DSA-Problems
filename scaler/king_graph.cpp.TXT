@@ -1,0 +1,80 @@
+King Graph
+
+Kingdom JenaRajya is a well planned kingdom. They have N houses numbered [0,1,..,N-1] in the city and some bidirectional roads connecting the houses. King Jena has decided to meet his people and so he will visit one of the house in the kingdom where others can gather and meet him. King Jena is very kind and do not want anyone to travel far to meet him. So, he has come up with the following criteria to decide the house he will be visiting:
+
+Assuming that the people from other houses will take the shortest possible path to reach the house the king is visiting, King Jena wants to minimize the maximum distance one has to travel to meet him. In other words, he will choose the house where the shortest distance to the farthest house is minimum possible.
+
+Output the house number which King Jena will visit.
+
+Note:
+
+    In case there is a tie, he will visit the house with minimum house number.
+    You can assume that the graph is connected and so everyone will be able to visit.
+
+Constraints: 1 <= N <= 500 1 <= Length of road <= 1000000
+
+Input format: Adjacency matrix representation of the graph. A[i][j] = distance between house i and j. (A[i][i] = 0 and A[i][j] = -1, if house i and house j have no road between them) As the roads are bidirectional, A[i][j] = A[j][i]
+
+Example:
+
+Input:
+A = [[0, 6, 8, -1],
+     [6, 0, 9, -1], 
+     [8, 9, 0, 4],
+     [-1, -1, 4, 0]]
+
+Output:
+2
+
+
+
+**************************************************************************************
+
+void floyd_warshall(vector<vector<int> > &dp){
+    int n=dp.size();
+    int inf=1e9+7;
+    for(int i=0;i<n;++i){
+        for(int j=0;j<n;++j){
+            if(dp[i][j]==-1)
+                dp[i][j]=inf;
+        }
+    }
+   //vector<vector<int> > dp(n,vector<int>(n,inf));
+    for(int k=0;k<n;++k){
+        for(int i=0;i<n;++i){
+            for(int j=0;j<n;++j){
+                dp[i][j]=min(dp[i][j],dp[i][k]+dp[k][j]);
+            }
+        }
+    }
+    for(int i=0;i<n;++i){
+        for(int j=0;j<n;++j){
+            if(dp[i][j]==inf)
+                dp[i][j]=-1;
+        }
+    }
+}
+int Solution::solve(vector<vector<int> > &A) {
+    int n=A.size();
+    int inf=1e9+7;
+    floyd_warshall(A);
+    // for(int i=0;i<n;++i){
+    //     for(int j=0;j<n;++j){
+    //         cout<<A[i][j]<<" ";
+    //     }
+    //     cout<<endl;   
+    // }
+    int max_distance=inf;
+    int city=-1;
+    for(int i=0;i<n;++i){
+        int distance=0;
+        for(int j=0;j<n;++j){
+            distance=max(distance,A[i][j]);
+        }
+        if(distance<max_distance){
+            max_distance=distance;
+            city=i;
+        }
+    }
+    return city;
+}
