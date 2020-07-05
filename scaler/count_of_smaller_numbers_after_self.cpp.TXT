@@ -1,0 +1,72 @@
+Count of smaller numbers after self
+
+Problem Description
+
+Given an array of integers A, find and return new integer array B.
+
+Array B has the property where B[i] is the number of smaller elements to the right of A[i].
+
+
+
+Problem Constraints
+
+1 <= length of the array <= 100000
+
+1 <= A[i] <= 109
+
+
+
+Input Format
+
+The only argument given is the integer array A.
+
+
+Output Format
+
+Return the new integer array B.
+
+
+Example Input
+
+A = [1, 5, 4, 2, 1]
+
+
+
+Example Output
+
+[0, 3, 2, 1, 0]
+
+
+
+Example Explanation
+
+Number of smaller elements to the right of 1 are 0.
+Number of smaller elements to the right of 5 are 3 (4, 2, 1).
+Number of smaller elements to the right of 4 are 2 (2, 1).
+Number of smaller elements to the right of 2 are 1 (1).
+Number of smaller elements to the right of 1 are 0.
+
+
+
+**************************************************************************************
+
+
+#include <ext/pb_ds/assoc_container.hpp> // Common file
+#include <ext/pb_ds/tree_policy.hpp>
+#include <functional> // for less
+using namespace __gnu_pbds;  
+typedef tree<int, null_type, less_equal<int>, rb_tree_tag,
+        tree_order_statistics_node_update>
+        ordered_set;
+vector<int> Solution::solve(vector<int> &nums) {
+    int n=nums.size();
+    ordered_set mySet;
+    vector<int> ans(n);
+    for(int i=n-1;i>=0;--i){
+        int val=nums[i];
+        int swaps=mySet.order_of_key(val);
+        ans[i]=swaps;
+        mySet.insert(val);
+    }
+    return ans;
+}
