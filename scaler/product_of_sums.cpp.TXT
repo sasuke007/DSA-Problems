@@ -1,0 +1,81 @@
+Product of Sums
+
+Consider a 3-tuple of integers (A,B,C) under the constraints that A<=B and C<=B.
+
+A function on the tuple is defined as:
+
+F(A,B,C)=0 if A>B or C>B (or both).
+F(A,B,C)=(A+B)*(B+C) if A<=B and C<=B.
+
+Given 3 arrays of size P,Q,R respectively.
+
+Find the sum of all F(A,B,C) over all the 3-tuples (A,B,C) where A,B,C belong to the arrays P,Q,R respectively.
+
+Since the sum can be very large, find the sum modulo 10^9+7.
+
+Constraints:
+
+1.   1<=P,Q,R<=100000
+2.   1<= every array element <=10^9
+
+Input:
+
+3 integers denoting the size of the 3 arrays and 3 arrays.
+
+Output: Sum of all F(A,B,C) over all the 3-tuples (A,B,C) where A,B,C belong to the arrays P,Q,R respectively modlulo 10^9+7
+
+Example:
+
+Input:
+
+size of array1: 2
+size of array2: 2
+size of array3: 4
+array1:[1 2]
+array2:[4 4]
+array3:[2 3 4 5]
+
+Output:
+
+462
+
+
+**************************************************************************************
+
+
+#define ll long long
+vector<ll> compute_prefix_sum(vector<int> &arr){
+    int n=arr.size();
+    int mod=1e9+7;
+    vector<ll> prefix_sum(n);
+    prefix_sum[0]=arr[0];
+    for(int i=1;i<n;++i){
+        prefix_sum[i]=(prefix_sum[i-1]+arr[i])%mod;
+    }
+    return prefix_sum;
+}
+int Solution::getSum(int A, int B, int C, vector<int> &D, vector<int> &E, vector<int> &F) {
+    int mod=1e9+7;
+    sort(D.begin(),D.end());
+    sort(E.begin(),E.end());
+    sort(F.begin(),F.end());
+    vector<ll> prefix_sum_D=compute_prefix_sum(D);
+    vector<ll> prefix_sum_E=compute_prefix_sum(E);
+    vector<ll> prefix_sum_F=compute_prefix_sum(F);
+    int ans=0;
+    for(int i=0;i<B;++i){
+        int val=E[i];
+        auto d_it=upper_bound(D.begin(),D.end(),val);
+        auto f_it=upper_bound(F.begin(),F.end(),val);
+        int d_elements=d_it-D.begin();
+        int f_elements=f_it-F.begin();
+        if(d_elements==0 or f_elements==0)
+            continue;
+        int sum_d=prefix_sum_D[d_elements-1];
+        int sum_f=prefix_sum_F[f_elements-1];
+        int a=((f_elements*1ll*val)%mod+sum_f)%mod;
+        int b=((d_elements*1ll*val)%mod+sum_d)%mod;
+        ans=(ans+(a*1ll*b)%mod)%mod;
+    }
+    return ans;
+}

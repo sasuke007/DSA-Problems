@@ -1,0 +1,78 @@
+GREEDY PICK
+
+Given a binary tree of integers.
+
+Return the maximum value you can pick from nodes of given binary tree without picking any pair of nodes which are directly linked i.e. if you picked some node you cannot pick its children nodes
+
+As answer can be very large return answer %10^9 + 7
+
+Constraints
+
+1 <= Number of nodes in binary tree <= 100000
+0 <= node values <= 10^9 
+
+For Example
+
+Input 1:
+            3
+          /   \
+         2    3
+          \    \
+           3    1
+
+Output 1:
+    7
+Explaination 1:
+    Only nodes represented by _ are picked 
+            _
+          /   \
+         2    3
+          \    \
+           -    -
+
+
+Input 2:
+            3
+           /  \
+          4    5
+         / \    \
+        1   3    1
+Output 2:
+    9
+Explaination 2:
+            3
+           /  \
+          -    -
+         / \    \
+        1   3    1
+
+
+
+**************************************************************************************
+
+/**
+ * Definition for binary tree
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+pair<int,int> compute(TreeNode *root){
+    int mod=1e9+7;
+    if(root==NULL){
+        return pair<int,int>();
+    }
+    int val=root->val;
+    pair<int,int> left=compute(root->left);
+    pair<int,int> right=compute(root->right);
+    pair<int,int> node_info;
+    node_info.first=(val*1ll+left.second+right.second)%mod;
+    node_info.second=(max(left.first*1ll+right.first,max(left.first,left.second)*1ll+max(right.first,right.second)))%mod;
+    return node_info;
+}
+int Solution::solve(TreeNode* root) {
+    pair<int,int> node_info=compute(root);
+    return max(node_info.first,node_info.second);
+}
