@@ -1,0 +1,106 @@
+Amazing Tree
+
+Given a binary tree with root node pointer A and an integer B.
+
+A number S is lost in the tree but you somehow find how to restore it.
+
+S is formed by concatenating all the node values from left to right at level B.
+
+Find and return the number S.
+
+If there are no nodes at level B then return an empty string.
+
+Note: Consider the level of root node as 0.
+
+
+Input Format
+
+The first arguments given is root pointer A.
+The second argument is an integer B.
+
+Output Format
+
+Return the string S denoting the number.
+
+Constraints
+
+1 <= Total number of nodos <= 100000
+0 < = Nodes values <= 9
+1 <= B <= 100 
+
+For Example
+
+Input 1:
+
+       1
+      / \
+     2   3
+    / \  \
+   3   4  5
+
+   B = 1
+
+Output 1:
+    "23"
+    Explanation 1:
+        Nodes at level 1: 2 and 3
+
+Input 2:
+
+       7
+      / \
+     2   3
+    / \  \
+   0   1  0
+
+   B = 2
+
+Output 1:
+    "010"
+    Explanation 1:
+        Nodes at level 1: 0, 1,and 0    
+
+
+
+
+**************************************************************************************
+
+
+/**
+ * Definition for binary tree
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+string Solution::solve(TreeNode* root, int B) {
+    int level=0;
+    string ans;
+    queue<TreeNode *> store;
+    store.push(root);
+    store.push(NULL);
+    while(store.size()>1){
+        TreeNode *node=store.front();
+        store.pop();
+        if(node==NULL){
+            level++;
+            store.push(NULL);
+            if(level>B)
+                break;
+        }
+        else{
+            if(level==B){
+                ans+=to_string(node->val);
+            }
+            else{
+                if(node->left)
+                    store.push(node->left);
+                if(node->right)
+                    store.push(node->right);
+            }
+        }
+    }
+    return ans;
+}
