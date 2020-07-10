@@ -1,0 +1,88 @@
+Packets
+
+You have N ordered piles of packets such that i-th pile contains Ai packets. All these packets are labeled with consecutive integers: packets in the first pile are labeled with numbers 1 to A1, packets in the second pile are labeled with numbers A1 + 1 to A1 + A2 and so on.
+
+You are given Q queries and you need to determine for each query: the pile in which the packet mentioned is contained.
+
+Input
+
+The first argument contains a single integer N (1 ≤ N ≤ 10^5), the number of piles.
+
+The second argument is an array A[] which contains integers  A1, A2, ..., An  ( 1 ≤ Ai ≤ 10^3, A1 + A2 + ... + An ≤ 10^6 ), where  Ai is the number of packets in the i-th pile.
+
+The third argument is a single integer Q (1 ≤ Q ≤ 10^5), the number of queries.
+
+The fourth argument is an array B[] of Q integers  B1, B2, ..., BQ  (1 ≤  Bi  ≤ A1 + A2 + ... + An), the number of the packet for which you need to determine the pile number.
+
+Output
+
+Return an array of length Q where the i-th element is an integer, representing the number of the pile where the packet labeled with the number Qi is.
+
+Examples
+
+Input
+
+5  
+2 7 3 4 9  
+3  
+1 25 11
+
+Output
+
+1 5 3
+
+Explanation
+
+Testcase 1-
+
+1. The packets with labels from [1,  2] are in the first pile.
+2. The packets with labels from [3,  9] are in the second pile.
+3. The packets with labels from [10,  12] are in the third pile.
+4. The packets with labels from [13,  16] are in the fourth pile.
+5. The packets with labels from [17,  25] are in the fifth pile.
+
+
+
+**************************************************************************************
+
+#define ll long long
+int binary_search(vector<ll> &prefix_sum,ll val){
+    int n=prefix_sum.size()-1;
+    int low=1,high=n;
+    int pile=n+1;
+    while(low<=high){
+        int mid=(low+high)/2;
+        ll left=prefix_sum[mid-1]+1;
+        ll right=prefix_sum[mid];
+        //pile=mid;
+        if(left<=val and val<=right){
+            pile=mid;
+            break;
+        }
+        else if(val<left){
+            high=mid-1;
+        }
+        else if(val>right){
+            low=mid+1;
+        }
+    }
+    return pile;
+}
+vector<int> Solution::solve(int A, vector<int> &B, int C, vector<int> &D) {
+    vector<int> ans;
+    int n=A;
+    vector<ll> prefix_sum(n+1,0);
+    for(int i=1;i<=n;++i){
+        prefix_sum[i]=prefix_sum[i-1]+B[i-1];
+    }
+    // for(int i=0;i<=n;++i){
+    //     cout<<prefix_sum[i]<<" ";
+    // }
+   // cout<<endl;
+    for(int i=0;i<C;++i){
+        int val=D[i];
+        int pile=binary_search(prefix_sum,val);
+        ans.push_back(pile);
+    }
+    return ans;
+}
