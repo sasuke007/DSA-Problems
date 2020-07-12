@@ -1,0 +1,103 @@
+Minimum cost to visit the museum
+
+Shadowland is a beautiful city with N museums which are connected with bidirectional roads. The city can be represented as a graph with N nodes representing museums and M edges representing roads.
+
+There is a cost of traveling each road in order to move from the front of one museum to that of the other. However, there is an additional cost one has to pay if and only if he decides to enter the museum. The cost of entering the museums need not be the same.
+
+For each museum i, Abhishek wants to know the minimum total amount he has to pay if he starts his journey from the front of the ith museum and enters any one museum.
+
+Note:
+
+1. Abhishek may or may not enter the same museum he is starting from.
+2. The graph may or may not be fully connected.
+3. There may be multiple roads between the same pair of museums as well.
+4. There may be roads which connect the museum to itself.
+5. While traveling the roads he will not enter any museum that he encounters on his way till he finally enters the museum such that the total cost of his journey is minimized.
+
+Given an array of integers A of size N for which A[i] represents the cost of entering the i'th museum. And three more integer arrays B, C and D. B[i], C[i] and D[i] represents the i'th road i.e. there is an edge from B[i] to C[i] with edge weight D[i].
+
+Find and return the integer array in which the i'th element represents the minimum cost Abhishek has to pay in order to visit any museum if he is standing in front of the i'th museum.
+
+
+Input Format
+
+The first argument given is the integer array A.
+The second argument given is the integer array B.
+The third argument given is the integer array C.
+The fourth argument given is the integer array D.
+
+Output Format
+
+Return an integer array in which the i'th element represents the minimum cost Abhishek has to pay in order to enter any museum if he starts from the front of the i'th museum.
+
+Constraints
+
+1 <= N <= 100000
+1 <= M <= 200000
+1 <= A[i], D[i] <= 10^9
+1 <= B[i], C[i] <= N 
+
+For Example
+
+Input 1:
+    A = [1, 2, 3, 1, 5]
+    B = [1, 2, 3, 4]
+    C = [2, 3, 4, 5]
+    D = [1, 1, 1, 1]
+Output 1:
+    [1, 2, 2, 1, 2]
+
+Input 2:
+    A = [5, 17, 100, 11]
+    B = [2, 3]
+    C = [1, 4]
+    D = [5, 50]
+Output 2:
+    [5, 10, 61, 11]
+
+
+
+**************************************************************************************
+
+
+#define pii pair<int,int>
+void dijikstra(vector<vector<pii> > &graph,priority_queue<pii,vector<pii>,greater<pii> > &min_heap,vector<int> &visited,vector<int> &min_cost){
+    while(!min_heap.empty()){
+        pii node=min_heap.top();
+        min_heap.pop();
+        int cost=node.first;
+        int city=node.second;
+        min_cost[city-1]=min(min_cost[city-1],cost);
+        visited[city]=1;
+        for(int neighbours=0;neighbours<graph[city].size();++neighbours){
+            int neighbour=graph[city][neighbours].first;
+            int distance=graph[city][neighbours].second;
+            if(!visited[neighbour]){
+                min_cost[neighbour-1]=min(min_cost[neighbour-1],min_cost[city-1]+distance);
+                min_heap.push({min_cost[city-1]+distance,neighbour});
+            }
+        }
+    }
+}
+vector<int> Solution::solve(vector<int> &museum_cost, vector<int> &U, vector<int> &V, vector<int> &edge_cost) {
+    int inf=1e9+7;
+    int no_cities=museum_cost.size();
+    int no_edges=U.size();
+    priority_queue<pii,vector<pii>,greater<pii> > min_heap;
+    vector<int> min_cost(no_cities,inf),visited(no_cities+1,0);
+    vector<vector<pii> > graph(no_cities+1);
+    for(int i=0;i<no_edges;++i){
+        int u=U[i];
+        int v=V[i];
+        int cost=edge_cost[i];
+        graph[u].push_back({v,cost});
+        graph[v].push_back({u,cost});
+    }
+    for(int i=0;i<no_cities;++i){
+        int cost=museum_cost[i];
+        int city=i+1;
+        min_heap.push({cost,city});
+    }
+    dijikstra(graph,min_heap,visited,min_cost);
+    return min_cost;
+}
