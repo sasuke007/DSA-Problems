@@ -1,0 +1,189 @@
+Least Occurring Character!
+
+Problem Description
+
+Given a tree with N nodes numbered from 1 to N.
+
+Each node has a lowercase character associated with it.
+
+You are given Q queries, in each query you are given two integers u and v and you are required to find the character with a minimum non-zero frequency in a simple path from u to v.
+
+NOTE:
+
+    If there is more than one character with minimum frequency, then output the lexographically smallest character.
+    Each edge in the tree is bi-directional.
+
+
+
+Problem Constraints
+
+2 <= N, Q <= 105
+
+1 <= u, v <= N and u != v
+
+
+
+Input Format
+
+First argument is an character array A of size N denoting character assigned to each nodes.
+
+Second argument is a 2-D array B of size (N-1) x 2 denoting the edge of the tree.
+
+Third argument is a 2-D array C of size Q x 2 denoting the queries, C[i][0] denotes u and C[i][1] denotes v.
+
+
+
+Output Format
+
+Return a string of size Q denoting answer for each query.
+
+
+Example Input
+
+Input 1:
+
+ A = ['a', 'a', 'b']
+ B = [ 
+        [1, 2]
+        [2, 3]
+     ]
+ C = [
+        [1, 3]
+        [2, 3]
+     ]
+
+Input 2:
+
+ A = ['a', 'b']
+ B = [
+        [1, 2]
+     ]
+ C = [
+        [1, 2]
+        [2, 1]
+     ]
+
+
+
+Example Output
+
+Output 1:
+
+ "ba"
+
+Output 2:
+
+ "aa"
+
+
+
+Example Explanation
+
+Explanation 1:
+
+ For Query 1: u = 1 and v = 3 so the path from 1 to 3 is 1 -> 2 -> 3 , 'a' occurs for two times on this path and 'b' occurs once.
+ So 'b' will be the minimum frequency character in the path from 1 to 3.
+
+ For Query 2: u = 2 and v = 3 so the path from 2 to 3 is 2 -> 3 , 'a' and 'b' each occurs once on this path.
+ As both 'a' and 'b' are the minimum frequency character so we will output the lexographically smallest one i.e 'a'.
+
+Explanation 2:
+
+ For Query 1: u = 1 and v = 2 so the path from 1 to 2 us 1 -> 2 , 'a' and 'b' occurs once on this path.
+ As both 'a' and 'b' are the minimum frequency character so we will output the lexographically smallest one i.e 'a'.
+
+ Query 2 is same as Query 1.
+
+
+
+
+**************************************************************************************
+
+
+
+void compute_parents(vector<vector<int> > &tree,int root,int parent,int l,vector<int> &parents,vector<int> &level,vector<int> &visited){
+    parents[root]=parent;
+    visited[root]=1;
+    level[root]=l;
+    for(int i=0;i<tree[root].size();++i){
+        int child=tree[root][i];
+        if(!visited[child]){
+            compute_parents(tree,child,root,l+1,parents,level,visited);
+        }
+    }
+}
+char compute_least_occuring_character(vector<int> &occured_characters){
+    int inf=1e9+7;
+    char least_occuring_character='A';
+    int frequency=inf;
+    for(int i=0;i<26;++i){
+        char alphabet='a'+i;
+        if(occured_characters[i]!=0 and frequency>occured_characters[i]){
+            least_occuring_character=alphabet;
+            frequency=occured_characters[i];
+        }
+    }
+    return least_occuring_character;
+}
+char least_occuring_character(vector<vector<int> > &tree,int u,int v,vector<int> &parents,vector<int> &level,vector<char> &node_values){
+    vector<int> occured_characters(26,0);
+    //cout<<"U "<<u<<" V "<<v<<endl;
+    if(level[u]>level[v]){
+        while(level[u]>level[v]){
+            char val=node_values[u-1];
+            occured_characters[val-'a']++;
+            u=parents[u];
+        }
+    }
+    if(level[v]>level[u]){
+        while(level[v]>level[u]){
+            char val=node_values[v-1];
+            //cout<<"v "<<v<<" val "<<val<<endl;
+            occured_characters[val-'a']++;
+            v=parents[v];
+        }
+    }
+    while(u!=v){
+        char val=node_values[u-1];
+        occured_characters[val-'a']++;
+        u=parents[u];
+        val=node_values[v-1];
+        occured_characters[val-'a']++;
+        v=parents[v];
+    }
+    char val=node_values[u-1];
+    occured_characters[val-'a']++;
+    // for(int i=0;i<occured_characters.size();++i){
+    //     cout<<occured_characters[i]<<" ";
+    // }
+    //cout<<endl;
+    return compute_least_occuring_character(occured_characters);
+}
+void display(vector<int> &arr){
+    for(int i:arr){
+        cout<<i<<" ";
+    }
+    cout<<endl;
+}
+string Solution::solve(vector<char> &node_values, vector<vector<int> > &edges, vector<vector<int> > &queries) {
+     int n=node_values.size();
+     vector<vector<int> > tree(n+1);
+     vector<int> visited(n+1,0),parents(n+1,0),level(n+1,0);
+     string ans;
+     for(int i=0;i<n-1;++i){
+         int u=edges[i][0];
+         int v=edges[i][1];
+         tree[u].push_back(v);
+         tree[v].push_back(u);
+     }
+     int root=1;
+     compute_parents(tree,root,0,0,parents,level,visited);
+     //display(parents);
+     //display(level);
+     for(int i=0;i<queries.size();++i){
+         int u=queries[i][0];
+         int v=queries[i][1];
+         ans+=least_occuring_character(tree,u,v,parents,level,node_values);
+     }
+     return ans;
+}
