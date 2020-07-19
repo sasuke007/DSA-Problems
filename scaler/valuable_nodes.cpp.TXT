@@ -1,0 +1,125 @@
+Valuable Nodes
+
+Problem Description
+
+Given a tree T containing N nodes numbered [1,2, ..., N] rooted at node 1.
+
+Each node has a value associated with it. You need to choose some of the nodes from the tree such that the sum of values of the chosen nodes is maximum possible.
+
+Moreover, if you have chosen a node V you cannot choose any of its children or grand children.
+
+In simple words, you have to choose a subset of nodes such that no two nodes in the chosen set have a parent-child relation or grandfather-grandchild relation between them.
+
+
+
+Problem Constraints
+
+1 <= N <= 500000
+
+1 <= val <= 10000
+
+
+
+Input Format
+
+First argument is the vector A, where A[i] denotes parent of i+1
+
+Second argument is the vector B, where B[i] if the value associated with node i+1
+
+
+
+Output Format
+
+Return an integer containing the maximum possible sum. (As the answer can be large, output the answer modulo 1000000007)
+
+
+Example Input
+
+Input 1:
+
+A = [0]
+B = [1]
+
+Input 2:
+
+A = [0, 1, 2, 3]
+B = [1, 50, 3, 4]
+
+
+
+Example Output
+
+Output 1:
+
+ 1
+
+Output 2:
+
+ 50
+
+
+
+Example Explanation
+
+Explanation 1:
+
+ Only node 1 is taken.
+
+Explanation 2:
+
+ Only node 2 is taken.
+
+
+
+
+*************************************************************************************
+
+
+void compute_grand_grand_parent(vector<vector<int> > &tree,vector<int> &ggp_arr,int node,int parent,int gp,int ggp){
+    if(ggp!=0)
+        ggp_arr[node]=ggp;
+    for(int i=0;i<tree[node].size();++i){
+        int child=tree[node][i];
+        compute_grand_grand_parent(tree,ggp_arr,child,node,parent,gp);
+    }
+}
+int dfs(vector<vector<int> > &tree,vector<vector<int> > &ggp_tree,vector<int> &dp,vector<int> &node_values,int root){
+    if(dp[root]!=-1)
+        return dp[root];
+    int mod=1e9+7;
+    int val=node_values[root-1];
+    int child_ans=0,ggchild_ans=val;
+    for(int i=0;i<tree[root].size();++i){
+        int child=tree[root][i];
+        child_ans=(child_ans+dfs(tree,ggp_tree,dp,node_values,child))%mod;
+    }
+    for(int i=0;i<ggp_tree[root].size();++i){
+        int ggchild=ggp_tree[root][i];
+        ggchild_ans=(ggchild_ans+dfs(tree,ggp_tree,dp,node_values,ggchild))%mod;
+    }
+    dp[root]=max(ggchild_ans,child_ans);
+    return dp[root];
+}
+int Solution::solve(vector<int> &A, vector<int> &B) {
+    int n=A.size();
+    vector<vector<int> > tree(n+1);
+    for(int i=0;i<n;++i){
+        int node=i+1;
+        int parent=A[i];
+        tree[parent].push_back(node);
+    }
+    int root=1,parent=0,gp=0,ggp=0;
+    vector<int> ggp_arr(n+1,0);
+    compute_grand_grand_parent(tree,ggp_arr,root,parent,gp,ggp);
+    // for(int i=0;i<n+1;++i){
+    //     cout<<ggp_arr[i]<<" ";
+    // }
+    vector<vector<int> > ggp_tree(n+1);
+    for(int i=1;i<n+1;++i){
+        if(ggp_arr[i]!=0){
+            ggp_tree[ggp_arr[i]].push_back(i);   
+        }
+    }
+    vector<int> dp(n+1,-1);
+    return dfs(tree,ggp_tree,dp,B,root);
+}
