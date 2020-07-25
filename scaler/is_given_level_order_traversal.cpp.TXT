@@ -1,0 +1,78 @@
+Is given level order a BST?
+
+Given an distinct integer array A of size N. You have to check whether the given array can represent the level order traversal of a Binary Search Tree or not.
+
+Input Format:
+
+    First and only argument of input is an integer array A
+
+Output Format:
+
+    return 1 if A can represent level order traversal of a BST, 0 otherwise.
+
+Constraints:
+
+    1 <= N <= 100000
+    1 <= A[i] <= 10^9
+    All integer in array are distinct
+
+Example:
+
+Input 1:
+    A = [7, 4, 12, 3, 6, 8, 1, 5, 10]
+Output 1:
+    1
+Explanation 1:
+    Following Bst have same level order.
+         7        
+        / \       
+      4    12      
+     / \   /     
+    3   6 8    
+   /   /   \
+  1   5    10
+Input 2:
+    A = [ 2, 3, 4, 1]
+Output 2:
+    0
+
+
+*************************************************************************************
+
+
+struct Node{
+    int val;
+    int minimum;
+    int maximum; 
+    Node(int val,int minimum,int maximum){
+        this->val=val;
+        this->minimum=minimum;
+        this->maximum=maximum;
+    }
+};
+int Solution::solve(vector<int> &A) {
+    int n=A.size();
+    queue<Node> store;
+    int inf=1e9+7;
+    int ninf=-inf;
+    Node node(A[0],ninf,inf);
+    store.push(node);
+    bool is_bst=true;
+    int i=1;
+    while(!store.empty() and i<n){
+        Node temp=store.front();
+        store.pop();
+        if(i<n and (temp.minimum<A[i] and A[i]<temp.val)){
+            Node new_node(A[i],temp.minimum,temp.val);
+            store.push(new_node);
+            ++i;
+        }
+        if(i<n and (temp.val<A[i] and A[i]<temp.maximum)){
+            Node new_node(A[i],temp.val,temp.maximum);
+            store.push(new_node);
+            ++i;
+        }
+    }
+    is_bst=(i==n?true:false);
+    return is_bst;
+}
