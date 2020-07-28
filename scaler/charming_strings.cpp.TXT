@@ -1,0 +1,95 @@
+Charming Strings
+
+Problem Description
+
+A string is called Charming if the letters of the string can be realigned in such a way that they form two consequent groups of equal symbols. (Different groups must contain different symbols.)
+
+For example, pqpqp is Charming (You can transform it to pppqq where the first three letters form a group of 3 p's and the next two letters form a group of 2 q's ), but qqq is not a Charming since in each possible consequent partition letters in these two groups coincide.
+
+You're given a string A. Check whether it can be split into two non-empty sub-sequences such that the strings formed by these sub-sequences are Charming.
+
+
+
+Problem Constraints
+
+1 <= |A| <= 105
+
+
+Input Format
+
+The first and the only line of input contains a string, A.
+
+
+Output Format
+
+Return a string representing the answer:
+
+    "yes" : If the string can be split into 2 charming subsequences.
+    "no" : Otherwise.
+
+
+
+Example Input
+
+Input 1:
+
+ A = "zzcxx" 
+
+Input 2:
+
+ A = "yeee" 
+
+
+
+Example Output
+
+Input 1:
+
+ yes 
+
+Input 2:
+
+ no 
+
+
+
+Example Explanation
+
+Explanation 1:
+
+ "zzcxx" can be split into "zc" and "zxx" where both of them are charming. 
+
+Explanation 2:
+
+ "yeee" cannot be split into 2 charming subsequences.
+
+
+*************************************************************************************
+
+string Solution::solve(string A) {
+    unordered_map<int,int> store;
+    for(char ch:A){
+        store[ch]++;
+    }
+    if(store.size()>=5){
+        return "no";
+    }
+    if(store.size()==4){
+        return "yes";
+    }
+    if(store.size()==3){
+        for(auto it=store.begin();it!=store.end();++it){
+            if(it->second>1)
+                return "yes";
+        }
+        return "no";
+    }
+    if(store.size()==2){
+        for(auto it=store.begin();it!=store.end();++it){
+            if(it->second==1)
+                return "no";
+        }
+        return "yes";
+    }
+    return "no";
+}
