@@ -1,0 +1,76 @@
+Remove Duplicate Letters
+
+Given a string A consisting of lowercase English alphabets. Find and return lexicographically smallest string B after removing duplicate letters from A so that every letter appears once and only once.
+
+
+Input Format
+
+The only argument given is string A.
+
+Output Format
+
+Return lexicographically smallest string B after removing duplicate letters from A.
+
+Constraints
+
+1 <= length of the string <= 200000
+A consists of lowercase English alphabets only. 
+
+For Example
+
+Input 1:
+    A = "cbacdcbc"
+Output 1:
+    B = "acdb"
+
+Input 2:
+    A = "bcabc"
+Output 2:
+    B = "abc"
+
+
+
+*************************************************************************************
+
+string Solution::solve(string input) {
+    unordered_map<char, int> last_index;
+	int n = input.size();
+	for (int i = n - 1; i >= 0; --i) {
+		if (last_index.find(input[i]) == last_index.end()) {
+			last_index[input[i]] = i;
+		}
+	}
+	stack<char> aux;
+	unordered_set<char> already_present;
+	for (int i = 0; i < n; ++i) {
+		char ch = input[i];
+		if (aux.empty() == true) {
+			aux.push(ch);
+			already_present.insert(ch);
+			continue;
+		}
+		if (ch < aux.top()) {
+			while (aux.empty() == false and already_present.find(ch)==already_present.end() and ch<aux.top() and last_index[aux.top()]>i) {
+				already_present.erase(aux.top());
+				aux.pop();
+			}
+			if (already_present.find(ch) == already_present.end()) {
+				aux.push(ch);
+				already_present.insert(ch);
+			}
+		}
+		else {
+			if (already_present.find(ch) == already_present.end()) {
+				aux.push(ch);
+				already_present.insert(ch);
+			}
+		}
+	}
+	string ans;
+	while (aux.empty() == false) {
+		ans += aux.top();
+		aux.pop();
+	}
+	reverse(ans.begin(), ans.end());
+	return ans;
+}
