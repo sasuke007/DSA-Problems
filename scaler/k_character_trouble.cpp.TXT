@@ -1,0 +1,110 @@
+K Character Trouble
+
+Problem Description
+
+Given a string A. An operation on the string is defined as follows:
+
+Remove the first occurrence of the same consecutive B characters.
+
+Keep performing this operation on the string until there are no more occurrences of the same B consecutive characters and return the final string.
+
+
+
+Problem Constraints
+
+1 <= length(A) <= 100000
+
+1 <= B <= |A|
+
+All the alphabets of A are lowercase (a - z).
+
+
+
+Input Format
+
+The first argument given is a String A.
+
+The second argument given is an integer B.
+
+
+
+Output Format
+
+Return the final string.
+
+
+Example Input
+
+Input 1:
+
+ A = "abbbc"
+ B = 3
+
+Input 2:
+
+ A = "abbac"
+ B = 2
+
+
+
+Example Output
+
+Output 1:
+
+ "ac"
+
+Output 2:
+
+ "c"
+
+
+
+Example Explanation
+
+Explanation 1:
+
+ In the first iteration we will remove the 3 consecutive 'b's to get "ac".
+
+Explanation 2:
+
+ In the first iteration we will remove the 2 consecutive 'b's to get "aac".
+ In the second iteration we will remove the 2 consecutive 'a's to get "c".
+
+
+
+
+*************************************************************************************
+
+
+void remove_k_consecutive_characters(stack<pair<char,int> > &store,int k){
+    if(store.top().second==k){
+        while(k){
+            store.pop();
+            k--;
+        }
+    }
+}
+string Solution::solve(string input, int k) {
+    stack<pair<char,int> > store;
+    int n=input.size();
+    for(int i=0;i<n;++i){
+        char ch=input[i];
+        if(store.empty()){
+            store.push({ch,1});
+        }
+        else if(store.top().first!=ch){
+            store.push({ch,1});
+        }
+        else{
+            store.push({ch,store.top().second+1});
+        }
+        remove_k_consecutive_characters(store,k);
+    }
+    string ans;
+    while(!store.empty()){
+        ans+=store.top().first;
+        store.pop();
+    }
+    reverse(ans.begin(),ans.end());
+    return ans;
+}
