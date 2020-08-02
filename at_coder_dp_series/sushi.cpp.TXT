@@ -1,0 +1,77 @@
+    //#include <bits/stdc++.h>
+    #include <iostream>
+    #include<iomanip>
+    #include <string>
+    #include <vector>
+    #include <map>
+    #include <algorithm>
+    #include <unordered_map>
+    #include <cmath>
+    #include <chrono>
+    #include <unordered_set>
+    #include <bitset>
+    #include <numeric>
+    #include <cmath>
+    #include <set>
+    #include <list>
+    #include <stack>
+    #include <queue>
+    // #include <ext/pb_ds/assoc_container.hpp> // Common file
+    // #include <ext/pb_ds/tree_policy.hpp>     // Including tree_order_statistics_node_update
+    // #include <ext/pb_ds/detail/standard_policies.hpp>
+    // using namespace __gnu_pbds;
+    using namespace std;
+    #define endl "\n"
+    #define ll long long
+    int inf = 1e9 + 7;
+    int ninf = -inf;
+    int mod = 998244353;
+    // typedef tree<
+    //     int,
+    //     null_type,
+    //     less<int>,
+    //     rb_tree_tag,
+    //     tree_order_statistics_node_update
+    //   >
+    // ordered_set;
+    int main(){
+      ios_base::sync_with_stdio(0);
+      cin.tie(0);
+    #ifdef _DEBUG
+      FILE *fp;
+      freopen("input.txt", "r", stdin);
+      freopen("output.txt", "w", stdout);
+    #endif
+      int n;
+      cin>>n;
+      vector<double> p(n);
+      for(int i=0;i<n;++i){
+        cin>>p[i];
+      }
+      int heads=n/2+1;
+      vector<vector<double> > dp(n+1,vector<double>(n+1,0));
+      dp[0][0]=1;
+      for(int i=1;i<=n;++i){
+        double heads_p=p[i-1];
+        double tails_p=1-heads_p;
+        for(int j=0;j<=n;++j){
+          if(j==0){
+            dp[i][j]=tails_p*dp[i-1][j];
+          }
+          else{
+            dp[i][j]=(heads_p*dp[i-1][j-1])+(tails_p*dp[i-1][j]);
+          }
+        }
+      }
+      // for(int i=0;i<=n;++i){
+      //   for(int j=0;j<=n;++j){
+      //     cout<<dp[i][j]<<" ";
+      //   }
+      //   cout<<endl;
+      // }
+      double ans=0;
+      for(int j=heads;j<=n;++j){
+        ans+=dp[n][j];
+      }
+      cout << setprecision(15) << ans <<endl;
+    }
