@@ -1,0 +1,61 @@
+#include<math.h>
+#include<vector>
+#include<iostream>
+#include<string>
+#include<stack>
+#include<map>
+#include<numeric>
+#include<algorithm>
+#include<string>
+#include<queue>
+#include<unordered_map>
+using namespace std;
+pair<bool, int> dfs(vector<vector<char> >& input, int i, int j) {
+	int n = input.size();
+	int m = input[0].size();
+	if (i < 0 or i >= n or j < 0 or j >= m)
+		return { false,0 };
+	if (input[i][j] == '*' or input[i][j]=='v')
+		return { true,0 };
+	input[i][j] = 'v';
+	bool possible = true;
+	int sum = 0;
+	pair<bool, int> right = dfs(input, i + 1, j);
+	pair<bool, int > left = dfs(input, i - 1, j);
+	pair<bool, int> down = dfs(input, i, j + 1);
+	pair<bool, int> up = dfs(input, i, j - 1);
+	possible &= right.first & left.first & up.first & down.first;
+	sum += right.second + left.second + up.second + down.second;
+	if (possible) {
+		return { true,1 + sum };
+	}
+	return { false,0 };
+}
+int main() {
+#ifdef _DEBUG
+	FILE* file;
+	freopen_s(&file, "input.txt", "r", stdin);
+#endif 
+	int n, m;
+	cin >> n >> m;
+	vector<vector<char> > input(n, vector<char>(m, 0));
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < m; ++j) {
+			cin >> input[i][j];
+		}
+	}
+	int ans = 0;
+	for (int i = 0; i < n; ++i) {
+		for (int j = 0; j < m; ++j) {
+			if (input[i][j] == '.') {
+				pair<bool,int> val=dfs(input, i, j);
+				if (val.first) {
+					//cout << i << " " << j <<" "<<val.second<<endl;
+					ans += val.second;
+				}
+			}
+		}
+	}
+	cout << ans << endl;
+}
+

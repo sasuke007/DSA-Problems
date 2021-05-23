@@ -1,0 +1,80 @@
+package dev.rohit;
+
+import java.util.*;
+
+class CoOrdinate {
+    private int x, y, diff;
+
+    public CoOrdinate(int x, int y) {
+        this.x = x;
+        this.y = y;
+        this.diff = y - x;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public int getDiff() {
+        return diff;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int n, k;
+        n = kb.nextInt();
+        k = kb.nextInt();
+        ArrayList<CoOrdinate> input = new ArrayList<>();
+        for (int i = 0; i < n; ++i) {
+            int x = kb.nextInt();
+            int y = kb.nextInt();
+            CoOrdinate coOrdinate = new CoOrdinate(x, y);
+            input.add(coOrdinate);
+        }
+        System.out.println(findMaxValue(input, k));
+    }
+
+    private static int findMaxValue(ArrayList<CoOrdinate> input, int k) {
+        Collections.sort(input, new Comparator<CoOrdinate>() {
+
+            @Override
+            public int compare(CoOrdinate o1, CoOrdinate o2) {
+                if (o1.getX() != o2.getX()) {
+                    return o1.getX() - o2.getX();
+                }
+                return o1.getY() - o2.getY();
+            }
+        });
+
+        int n = input.size();
+        Queue<CoOrdinate> maxHeap = new PriorityQueue<>(new Comparator<CoOrdinate>() {
+            @Override
+            public int compare(CoOrdinate o1, CoOrdinate o2) {
+                if (o1.getDiff() != o2.getDiff()) {
+                    return o2.getDiff() - o1.getDiff();
+                }
+                return o1.getX() - o2.getX();
+            }
+        });
+        int answer = Integer.MIN_VALUE;
+        maxHeap.add(input.get(0));
+        for (int i = 1; i < n; ++i) {
+            CoOrdinate coOrdinate = input.get(i);
+            while ((!maxHeap.isEmpty()) && Math.abs(maxHeap.peek().getX() - coOrdinate.getX()) > k) {
+                maxHeap.remove();
+            }
+            if (!maxHeap.isEmpty()) {
+                answer = Math.max(answer, coOrdinate.getX() + coOrdinate.getY() + maxHeap.peek().getDiff());
+            }
+            maxHeap.add(coOrdinate);
+        }
+        return answer;
+    }
+
+}

@@ -1,0 +1,91 @@
+#include<math.h>
+#include<vector>
+#include<iostream>
+#include<string>
+#include<stack>
+#include<map>
+#include<numeric>
+#include<algorithm>
+#include<string>
+#include<queue>
+#include<unordered_map>
+using namespace std;
+
+
+int find_shortest_path(unordered_map<string, vector<string> >& graph, string start, string end) {
+	queue<string> bfs;
+	unordered_map<string, bool> visited;
+	bfs.push(start);
+	bfs.push("");
+	int count = 0;
+	bool found = false;
+	while (!bfs.empty()) {
+		string node = bfs.front();
+		bfs.pop();
+		visited[node] = true;
+		if (node == "") {
+			if (!bfs.empty()) {
+				bfs.push("");
+			}
+			++count;
+		}
+		if (node == end) {
+			found = true;
+			break;
+		}
+		for (int i = 0; i < graph[node].size(); ++i) {
+			string neighbour = graph[node][i];
+			if (visited[neighbour] == false) {
+				bfs.push(neighbour);
+			}
+		}
+	}
+	if (found)
+		return count;
+	return -1;
+}
+
+
+void add_edge(unordered_map<string, vector<string> >& graph, string first, string second) {
+	graph[first].push_back(second);
+}
+
+
+int check_difference(string first, string second) {
+	int diff = 0;
+	for (int i = 0; i < first.size(); ++i) {
+		if (first[i] != second[i])
+			++diff;
+	}
+	return diff;
+}
+
+
+int main() {
+#ifdef _DEBUG
+	FILE* file;
+	freopen_s(&file, "input.txt", "r", stdin);
+#endif 
+	int n;
+	cin >> n;
+	vector<string> input(n);
+	for (int i = 0; i < n; ++i) {
+		cin >> input[i];
+	}
+	string start, end;
+	cin >> start >> end;
+	input.push_back(start);
+	unordered_map<string, vector<string> > graph;
+	for (int i = 0; i < input.size(); ++i) {
+		for (int j = 0; j < input.size(); ++j) {
+			if (i != j) {
+				int diff = check_difference(input[i], input[j]);
+				if (diff == 1) {
+					add_edge(graph,input[i], input[j]);
+				}
+			}
+		}
+	}
+	cout << find_shortest_path(graph, start, end)+1;
+}
+

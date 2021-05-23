@@ -1,0 +1,32 @@
+public class Solution {
+    public ArrayList<Integer> solve(ArrayList<Integer> list) {
+        int n = list.size();
+        ArrayList<Integer> answer = new ArrayList<Integer>();
+        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+        for (int number : list) {
+            if (Objects.isNull(maxHeap.peek())) {
+                maxHeap.add(number);
+                answer.add(number);
+                continue;
+            }
+            if (number <= maxHeap.peek()) {
+                maxHeap.add(number);
+            } else {
+                minHeap.add(number);
+            }
+            balance(minHeap, maxHeap);
+            answer.add(maxHeap.peek());
+        }
+        return answer;
+    }
+    
+    public static void balance(PriorityQueue<Integer> minHeap, PriorityQueue<Integer> maxHeap) {
+        if (maxHeap.size() > minHeap.size() + 1) {
+            minHeap.add(maxHeap.poll());
+        }
+        if (minHeap.size() >= maxHeap.size() + 1) {
+            maxHeap.add(minHeap.poll());
+        }
+    }
+}

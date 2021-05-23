@@ -1,0 +1,144 @@
+package dev.rohit;
+
+import java.util.*;
+
+package dev.rohit;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * This is a implementation class of union by rank(union by weight) with path compression.
+ */
+public class DisjointSetUnion {
+
+    List<Integer> disJointSet;
+
+    public DisjointSetUnion(int n) {
+        disJointSet = new ArrayList<Integer>();
+        for (int i = 0; i < n; ++i) {
+            disJointSet.add(-1);
+        }
+    }
+
+    public void union(int firstNode, int secondNode) {
+        int firstNodeParent = find(firstNode);
+        int secondNodeParent = find(secondNode);
+        if (firstNodeParent == secondNodeParent)
+            return;
+        if (Math.abs(disJointSet.get(firstNodeParent)) >= Math.abs(disJointSet.get(secondNodeParent))) {
+            disJointSet.set(firstNodeParent, disJointSet.get(firstNodeParent) + disJointSet.get(secondNodeParent));
+            disJointSet.set(secondNodeParent, firstNodeParent);
+        } else {
+            disJointSet.set(secondNodeParent, disJointSet.get(secondNodeParent) + disJointSet.get(firstNodeParent));
+            disJointSet.set(firstNodeParent, secondNodeParent);
+        }
+    }
+
+    public int find(int node) {
+        if (disJointSet.get(node) < 0) {
+            return node;
+        }
+        int parent = find(disJointSet.get(node));
+        disJointSet.set(node, parent);
+        return parent;
+    }
+
+    public void printDisjointSet() {
+        disJointSet.forEach(element -> System.out.print(element + " "));
+    }
+}
+
+
+class Edge implements Comparable {
+    private int u, v, w;
+
+    public Edge(int u, int v, int w) {
+        this.u = u;
+        this.v = v;
+        this.w = w;
+    }
+
+    public int getU() {
+        return u;
+    }
+
+    public int getV() {
+        return v;
+    }
+
+    public int getW() {
+        return w;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Edge edge = (Edge) o;
+        return u == edge.u && v == edge.v && w == edge.w;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(u, v, w);
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Edge node = (Edge) o;
+        return this.w - node.getW();
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int n = kb.nextInt();
+        int noOfVertices = Integer.MIN_VALUE;
+        List<Edge> edges = new ArrayList<>();
+        for (int i = 0; i < n; ++i) {
+            int u = kb.nextInt();
+            int v = kb.nextInt();
+            int w = kb.nextInt();
+            noOfVertices = Math.max(noOfVertices, Math.max(u, v));
+            Edge edge = new Edge(u, v, w);
+            edges.add(edge);
+        }
+        int q;
+        List<Edge> queries = new ArrayList<>();
+        q = kb.nextInt();
+        for (int i = 0; i < q; ++i) {
+            int u = kb.nextInt();
+            int v = kb.nextInt();
+            int w = kb.nextInt();
+            Edge edge = new Edge(u, v, w);
+            queries.add(edge);
+        }
+        Collections.sort(queries);
+        Collections.sort(edges);
+        int edgesPosition = 0;
+        int queriesPosition = 0;
+        DisjointSetUnion disjointSetUnion = new DisjointSetUnion(noOfVertices + 1);
+        int answer = 0;
+        while (queriesPosition < queries.size()) {
+            int val = queries.get(queriesPosition).getW();
+            edgesPosition = eddEdgesUptillValue(disjointSetUnion, edges, edgesPosition, val);
+            if (disjointSetUnion.find(queries.get(queriesPosition).getU()) == disjointSetUnion.find(queries.get(queriesPosition).getV())) {
+                ++answer;
+            }
+            ++queriesPosition;
+        }
+        System.out.println(answer);
+    }
+
+    private static int eddEdgesUptillValue(DisjointSetUnion disjointSetUnion, List<Edge> edges, int edgesPosition, int val) {
+        while (edgesPosition < edges.size() && edges.get(edgesPosition).getW() <= val) {
+            disjointSetUnion.union(edges.get(edgesPosition).getU(), edges.get(edgesPosition).getV());
+            ++edgesPosition;
+        }
+        return edgesPosition;
+    }
+
+
+}
