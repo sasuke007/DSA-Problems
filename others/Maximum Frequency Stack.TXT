@@ -1,0 +1,35 @@
+package dev.rohit;
+
+import java.util.*;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int noOperations = kb.nextInt();
+        Map<Integer, Integer> frequencies = new HashMap<>();
+        Map<Integer, Stack<Integer>> maxFrequencyStack = new HashMap<>();
+        List<Integer> answer = new ArrayList<>();
+        int maxFrequency = 0;
+        for (int i = 0; i < noOperations; ++i) {
+            int type = kb.nextInt();
+            int val = kb.nextInt();
+            if (type == 1) {
+                int frequency = frequencies.getOrDefault(val, 0) + 1;
+                maxFrequency = Math.max(maxFrequency, frequency);
+                frequencies.put(val, frequency);
+                Stack<Integer> temp = maxFrequencyStack.getOrDefault(frequency, new Stack<>());
+                temp.push(val);
+                maxFrequencyStack.putIfAbsent(frequency, temp);
+                answer.add(-1);
+            } else {
+                int element = maxFrequencyStack.get(maxFrequency).pop();
+                answer.add(element);
+                frequencies.put(element,frequencies.get(element)-1);
+                if (maxFrequencyStack.get(maxFrequency).isEmpty()) {
+                    --maxFrequency;
+                }
+            }
+        }
+        answer.forEach(elem -> System.out.print(elem + " "));
+    }
+}

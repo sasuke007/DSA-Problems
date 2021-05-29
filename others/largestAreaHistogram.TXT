@@ -1,0 +1,71 @@
+package dev.rohit;
+
+import java.util.*;
+import java.util.stream.Collectors;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int n = kb.nextInt();
+        List<Integer> input = new ArrayList<Integer>();
+        for (int i = 0; i < n; ++i) {
+            int val = kb.nextInt();
+            input.add(val);
+        }
+        System.out.println(largestAreaHistogram(input));
+    }
+
+    private static int largestAreaHistogram(List<Integer> input) {
+        int n = input.size();
+        List<Integer> minLeft = calculateMin(input, -1);
+        Collections.reverse(input);
+        List<Integer> minRight = calculateMin(input, n);
+        Collections.reverse(minRight);
+        Collections.reverse(input);
+        minRight = minRight.stream().map(elem ->{
+            if(elem!=n){
+                return n-1-elem;
+            }
+            return n;
+        }).collect(Collectors.toList());
+        int maxArea = Integer.MIN_VALUE;
+        for (int i = 0; i < n; ++i) {
+            int val = input.get(i);
+            int leftMin = minLeft.get(i);
+            int rightMin = minRight.get(i);
+            int base = (rightMin - 1) - (leftMin + 1) + 1;
+            maxArea = Math.max(base * val, maxArea);
+        }
+//        minLeft.forEach(elem -> System.out.print(elem + " "));
+//        System.out.println();
+//        minRight.forEach(elem -> System.out.print(elem + " "));
+//        System.out.println();
+        return maxArea;
+    }
+
+    private static List<Integer> calculateMin(List<Integer> input, int defaultValue) {
+        int n = input.size();
+        List<Integer> mins = new ArrayList<>();
+        Stack<Integer> stack = new Stack<>();
+        for (int i = 0; i < n; ++i) {
+            if (stack.isEmpty()) {
+                stack.push(i);
+                mins.add(defaultValue);
+            } else {
+                int val = input.get(i);
+                if (input.get(stack.peek()) >= val) {
+                    while (!stack.isEmpty() && input.get(stack.peek()) >= val) {
+                        stack.pop();
+                    }
+                }
+                if (stack.isEmpty()) {
+                    mins.add(defaultValue);
+                } else {
+                    mins.add(stack.peek());
+                }
+                stack.push(i);
+            }
+        }
+        return mins;
+    }
+}
