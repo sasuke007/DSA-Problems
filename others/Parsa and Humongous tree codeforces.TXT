@@ -1,0 +1,127 @@
+package dev.rohit;
+
+import java.util.*;
+
+class Pair implements Comparable<Pair> {
+    public int left, right;
+
+    public Pair(int left, int right) {
+        this.left = left;
+        this.right = right;
+    }
+
+    @Override
+    public int compareTo(Pair other) {
+        if (this.left == other.left) {
+            return this.right - other.right;
+        }
+        return this.left - other.left;
+    }
+}
+
+class Beauty {
+    int diff, u, v;
+
+    public Beauty(int diff, int u, int v) {
+        this.diff = diff;
+        this.u = u;
+        this.v = v;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
+        int tc = kb.nextInt();
+        while (tc != 0) {
+            List<Pair> limits = new ArrayList<>();
+            HashMap<Integer, ArrayList<Integer>> tree = new HashMap<>();
+            int n = kb.nextInt();
+            for (int i = 0; i < n; ++i) {
+                int left = kb.nextInt();
+                int right = kb.nextInt();
+                Pair pair = new Pair(left, right);
+                limits.add(pair);
+            }
+            for (int i = 0; i < n - 1; ++i) {
+                int u = kb.nextInt();
+                int v = kb.nextInt();
+                addEdge(tree, u - 1, v - 1);
+            }
+            System.out.println(findMaximumBeauty(tree, limits));
+            --tc;
+        }
+    }
+
+    private static int findMaximumBeauty(HashMap<Integer, ArrayList<Integer>> tree, List<Pair> limits) {
+        Queue<Beauty> queue = bfs(tree, limits);
+        HashMap<Integer, Integer> visitedNodes = new HashMap<>();
+        int answer = 0;
+        while (!queue.isEmpty()) {
+            Beauty beauty = queue.remove();
+            if (!visitedNodes.containsKey(beauty.u) && !visitedNodes.containsKey(beauty.v)) {
+                answer += beauty.diff;
+                if (Math.abs(limits.get(beauty.u).left - limits.get(beauty.v).right) == beauty.diff) {
+                    visitedNodes.put(beauty.u, limits.get(beauty.u).left);
+                    visitedNodes.put(beauty.v, limits.get(beauty.v).right);
+                } else {
+                    visitedNodes.put(beauty.u, limits.get(beauty.u).right);
+                    visitedNodes.put(beauty.v, limits.get(beauty.v).left);
+                }
+            } else if (visitedNodes.containsKey(beauty.u) && !visitedNodes.containsKey(beauty.v)) {
+                int max = Math.abs(visitedNodes.get(beauty.u) - limits.get(beauty.v).left);
+                visitedNodes.put(beauty.v, limits.get(beauty.v).left);
+                if (Math.abs(visitedNodes.get(beauty.u) - limits.get(beauty.v).right) > max) {
+                    max = Math.abs(visitedNodes.get(beauty.u) - limits.get(beauty.v).right);
+                    visitedNodes.put(beauty.v, limits.get(beauty.v).right);
+                }
+                answer += max;
+            } else if (visitedNodes.containsKey(beauty.v) && !visitedNodes.containsKey(beauty.u)) {
+                int max = Math.abs(visitedNodes.get(beauty.v) - limits.get(beauty.u).left);
+                visitedNodes.put(beauty.u, limits.get(beauty.u).left);
+                if (Math.abs(visitedNodes.get(beauty.v) - limits.get(beauty.u).right) > max) {
+                    max = Math.abs(visitedNodes.get(beauty.v) - limits.get(beauty.u).right);
+                    visitedNodes.put(beauty.u, limits.get(beauty.u).right);
+                }
+                answer += max;
+            } else {
+                answer += Math.abs(visitedNodes.get(beauty.v) - visitedNodes.get(beauty.u));
+            }
+        }
+        return answer;
+    }
+
+    private static Queue<Beauty> bfs(HashMap<Integer, ArrayList<Integer>> tree, List<Pair> limits) {
+        Queue<Beauty> priorityQueue = new PriorityQueue<>(new Comparator<Beauty>() {
+            @Override
+            public int compare(Beauty o1, Beauty o2) {
+                return o2.diff - o1.diff;
+            }
+        });
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(0);
+        HashSet<Integer> visited = new HashSet<>();
+        visited.add(0);
+        while (!queue.isEmpty()) {
+            int node = queue.remove();
+            for (int i = 0; i < tree.get(node).size(); ++i) {
+                int neighbour = tree.get(node).get(i);
+                if (!visited.contains(neighbour)) {
+                    int diff = Math.max(Math.abs(limits.get(node).left - limits.get(neighbour).right), Math.abs(limits.get(node).right - limits.get(neighbour).left));
+                    visited.add(neighbour);
+                    priorityQueue.add(new Beauty(diff, node, neighbour));
+                    queue.add(neighbour);
+                }
+            }
+        }
+        return priorityQueue;
+    }
+
+
+    private static void addEdge(HashMap<Integer, ArrayList<Integer>> tree, int u, int v) {
+        tree.putIfAbsent(u, new ArrayList<Integer>());
+        tree.putIfAbsent(v, new ArrayList<Integer>());
+        tree.get(u).add(v);
+        tree.get(v).add(u);
+    }
+}
