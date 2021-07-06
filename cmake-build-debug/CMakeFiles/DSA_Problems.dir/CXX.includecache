@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Github.com/DSA-Problems/main.cpp
+iostream
+-
+unordered_map
+-
+map
+-
+vector
+-
+numeric
+-
+algorithm
+-
+list
+-
+queue
+-
+unordered_set
+-
+

@@ -1,0 +1,3 @@
+"D:\Program Files\CLion 2021.1.2\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\DSA_Problems.dir/objects.a
+D:\softwares\mingw64\bin\ar.exe cr CMakeFiles\DSA_Problems.dir/objects.a @CMakeFiles\DSA_Problems.dir\objects1.rsp
+D:\softwares\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\DSA_Problems.dir/objects.a -Wl,--no-whole-archive -o DSA_Problems.exe -Wl,--out-implib,libDSA_Problems.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\DSA_Problems.dir\linklibs.rsp
