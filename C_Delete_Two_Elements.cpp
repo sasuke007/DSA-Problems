@@ -40,37 +40,35 @@ int main() {
 #endif
       int tc;
   cin >> tc;
-  int inf = 1e9 + 7;
   while (tc--) {
     int n;
     cin >> n;
-    string input;
-    cin >> input;
-    int ans = inf;
-    vector<int> lengths;
-    for (int i = 2; i <= 7; ++i) {
-      lengths.push_back(i);
-    }
+    vector<int> input(n);
     for (int i = 0; i < n; ++i) {
-      int a = 0, b = 0, c = 0;
-      for (int j = i; j < min(i + 7, n); ++j) {
-        if (input[j] == 'a') {
-          ++a;
+      cin >> input[i];
+    }
+    ll sum = accumulate(input.begin(), input.end(), 0l);
+    ll answer = 0;
+    unordered_map<int, int> freq;
+    if (((2 * sum) % n) == 0) {
+      int val = (2 * sum) / n;
+      for (int i = 0; i < n; ++i) {
+        freq[input[i]]++;
+      }
+      vector<int>::iterator end = unique(input.begin(), input.end());
+      input.resize(distance(input.begin(), end));
+      for (int i = 0; i < input.size(); ++i) {
+        int first = input[i];
+        int second = val - first;
+        if(first==second){
+            answer += (freq[first]*(freq[first]-1))/2;
         }
-        if (input[j] == 'b') {
-          ++b;
+        else {
+            answer += freq[first]*freq[second];
         }
-        if (input[j] == 'c') {
-          ++c;
-        }
-        if (a + b + c > 1 and a > b and a > c) {
-          ans = min(ans, j - i + 1);
-        }
+        freq[first]=0;
       }
     }
-    if (ans == inf) {
-      ans = -1;
-    }
-    cout << ans << endl;
+    cout << answer << endl;
   }
 }

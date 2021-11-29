@@ -31,7 +31,14 @@ typedef vector<ll> vl;
 typedef vector<int> vi;
 typedef vector<vector<int> > vvi;
 typedef vector<vector<ll> > vvl;
-
+ll gcd(ll a, ll b) {
+  if (a == 0) return b;
+  if (b == 0) return a;
+  return gcd(b, a % b);
+}
+ll get_lcm(ll a, ll b) {
+    return a*b/gcd(a,b);
+}
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
@@ -40,37 +47,22 @@ int main() {
 #endif
       int tc;
   cin >> tc;
-  int inf = 1e9 + 7;
   while (tc--) {
     int n;
     cin >> n;
-    string input;
-    cin >> input;
-    int ans = inf;
-    vector<int> lengths;
-    for (int i = 2; i <= 7; ++i) {
-      lengths.push_back(i);
-    }
+    vector<int> input(n);
     for (int i = 0; i < n; ++i) {
-      int a = 0, b = 0, c = 0;
-      for (int j = i; j < min(i + 7, n); ++j) {
-        if (input[j] == 'a') {
-          ++a;
-        }
-        if (input[j] == 'b') {
-          ++b;
-        }
-        if (input[j] == 'c') {
-          ++c;
-        }
-        if (a + b + c > 1 and a > b and a > c) {
-          ans = min(ans, j - i + 1);
-        }
+      cin >> input[i];
+    }
+    ll lcm = 2;
+    int possible = true;
+    for (int i = 0; i < n; ++i) {
+      if (input[i] % lcm == 0) {
+        possible = false;
+        break;
       }
+      lcm = get_lcm(lcm, i + 3);
     }
-    if (ans == inf) {
-      ans = -1;
-    }
-    cout << ans << endl;
+    cout << (possible ? "YES" : "NO")<<endl;
   }
 }

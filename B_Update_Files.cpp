@@ -38,5 +38,7 @@ int main() {
 #ifdef D_DEBUG
   freopen("input.txt", "r", stdin)
 #endif
+    int tc;
+    cin>>tc;
     
 }

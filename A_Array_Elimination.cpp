@@ -40,37 +40,38 @@ int main() {
 #endif
       int tc;
   cin >> tc;
-  int inf = 1e9 + 7;
   while (tc--) {
     int n;
     cin >> n;
-    string input;
-    cin >> input;
-    int ans = inf;
-    vector<int> lengths;
-    for (int i = 2; i <= 7; ++i) {
-      lengths.push_back(i);
-    }
+    vector<int> input(n);
     for (int i = 0; i < n; ++i) {
-      int a = 0, b = 0, c = 0;
-      for (int j = i; j < min(i + 7, n); ++j) {
-        if (input[j] == 'a') {
-          ++a;
-        }
-        if (input[j] == 'b') {
-          ++b;
-        }
-        if (input[j] == 'c') {
-          ++c;
-        }
-        if (a + b + c > 1 and a > b and a > c) {
-          ans = min(ans, j - i + 1);
+      cin >> input[i];
+    }
+    vector<int> bits_count(32, 0);
+    for (int i = 0; i < n; ++i) {
+      int val = input[i];
+      for (int j = 0; j < 32; ++j) {
+        if ((val & (1 << j)) != 0) {
+          bits_count[j]++;
         }
       }
     }
-    if (ans == inf) {
-      ans = -1;
+    vector<int> answer;
+    for (int i = 1; i <= n; ++i) {
+      int possible = true;
+      for (int j = 0; j < 32; ++j) {
+        if (bits_count[j] % i != 0) {
+          possible = false;
+          break;
+        }
+      }
+      if (possible) {
+        answer.push_back(i);
+      }
     }
-    cout << ans << endl;
+    for (int i = 0; i < answer.size(); ++i) {
+      cout << answer[i] << " ";
+    }
+    cout << endl;
   }
 }
