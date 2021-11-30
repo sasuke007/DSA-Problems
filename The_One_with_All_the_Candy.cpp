@@ -47,29 +47,11 @@ int main() {
     for (int i = 0; i < n; ++i) {
       cin >> input[i];
     }
-    ll sum = accumulate(input.begin(), input.end(), 0ll);
-    ll answer = 0;
-    // cout<<sum<<endl;
-    unordered_map<int, int> freq;
-    if (((2 * sum) % n) == 0) {
-      int val = (2 * sum) / n;
-      for (int i = 0; i < n; ++i) {
-        freq[input[i]]++;
-      }
-      sort(input.begin(), input.end());
-      vector<int>::iterator end = unique(input.begin(), input.end());
-      input.resize(distance(input.begin(), end));
-      for (int i = 0; i < input.size(); ++i) {
-        int first = input[i];
-        int second = val - first;
-        if (first == second) {
-          answer += (freq[first] * 1ll * (freq[first] - 1)) / 2;
-        } else {
-          answer += freq[first] * 1ll* freq[second];
-        }
-        freq[first] = 0;
-      }
+    sort(input.begin(), input.end());
+    int answer =0;
+    for(int i=0;i<n;++i){
+        answer=max(answer,input[0]*n+(n-i));
     }
-    cout << answer << endl;
+    cout<<answer<<endl;
   }
 }
