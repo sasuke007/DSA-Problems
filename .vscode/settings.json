@@ -2,7 +2,8 @@
     "files.associations": {
         "ios": "cpp",
         "set": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "numeric": "cpp"
     },
     "C_Cpp.intelliSenseEngineFallback": "Enabled"
 }
