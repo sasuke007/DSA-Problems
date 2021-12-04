@@ -38,24 +38,15 @@ int main() {
 #ifdef D_DEBUG
   freopen("input.txt", "r", stdin)
 #endif
-      int tc;
-  cin >> tc;
-  while (tc--) {
-    int n, k;
-    cin >> n >> k;
-    vector<int> input(n);
-    for (int i = 0; i < n; ++i) {
-      cin>>input[i];
-    }
-    vector<int> sorted(input);
-    sort(sorted.begin(),sorted.end());
-    int possible = true;
-    for(int i=n-k;i<k;++i){
-        if(input[i]!=sorted[i]){
-            possible=false;
-            break;
+    int n,k;
+    int answer =0;
+    cin>>n>>k;
+    for(int i=0;i<n;++i){
+        int val;
+        cin>>val;
+        if(val%k == 0){
+            ++answer;
         }
     }
-    cout << (possible ? "YES" : "NO") << endl;
-  }
+    cout<<answer;
 }

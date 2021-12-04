@@ -41,21 +41,13 @@ int main() {
       int tc;
   cin >> tc;
   while (tc--) {
-    int n, k;
-    cin >> n >> k;
-    vector<int> input(n);
-    for (int i = 0; i < n; ++i) {
-      cin>>input[i];
+    int n, m, k;
+    cin >> n >> m >> k;
+    int min_diameter = ceil(log2(m));
+    if (m < (k - 1)) {
+      cout << "YES" << endl;
+    } else {
+      cout << "NO" << endl;
     }
-    vector<int> sorted(input);
-    sort(sorted.begin(),sorted.end());
-    int possible = true;
-    for(int i=n-k;i<k;++i){
-        if(input[i]!=sorted[i]){
-            possible=false;
-            break;
-        }
-    }
-    cout << (possible ? "YES" : "NO") << endl;
   }
 }

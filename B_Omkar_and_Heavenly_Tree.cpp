@@ -38,24 +38,28 @@ int main() {
 #ifdef D_DEBUG
   freopen("input.txt", "r", stdin)
 #endif
-      int tc;
-  cin >> tc;
-  while (tc--) {
-    int n, k;
-    cin >> n >> k;
-    vector<int> input(n);
-    for (int i = 0; i < n; ++i) {
-      cin>>input[i];
-    }
-    vector<int> sorted(input);
-    sort(sorted.begin(),sorted.end());
-    int possible = true;
-    for(int i=n-k;i<k;++i){
-        if(input[i]!=sorted[i]){
-            possible=false;
-            break;
+    int tc;
+    cin>>tc;
+    while(tc--){
+        int n,m;
+        cin>>n>>m;
+        set<int> not_allowed;
+        for(int i=0;i<m;++i){
+            int a,b,c;
+            cin>>a>>b>>c;
+            not_allowed.insert(b);
+        }
+        int allowed_vertex = 1;
+        for(int i=1;i<=n;++i){
+            if(not_allowed.find(i) == not_allowed.end()){
+                allowed_vertex = i;
+                break;
+            }
+        }
+        for(int i=1;i<=n;++i){
+            if(i!=allowed_vertex){
+                cout<<allowed_vertex<<" "<<i<<endl;
+            }
         }
     }
-    cout << (possible ? "YES" : "NO") << endl;
-  }
 }
