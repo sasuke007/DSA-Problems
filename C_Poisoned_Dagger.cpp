@@ -41,18 +41,28 @@ int main() {
       int tc;
   cin >> tc;
   while (tc--) {
-    int n, m, k;
-    cin >> n >> m >> k;
-    if (m == 0) {
-      cout << (k > 1 ? "YES" : "NO") << endl;
-    } else if (m < (n - 1)) {
-      cout << "NO"<<endl;
-    } else if (m >= (n - 1) and m < (n * (n - 1) / 2)) {
-      cout << (k > 3 ? "YES" : "NO") << endl;
-    } else if (m == (n * (n - 1) / 2)) {
-      cout << (k > 2 ? "YES" : "NO") << endl;
-    } else {
-      cout << "NO" << endl;
+    ll n, h;
+    cin >> n >> h;
+    vector<ll> input(n);
+    for (int i = 0; i < n; ++i) {
+      cin >> input[i];
     }
+    input.push_back(LLONG_MAX);
+    ll low = 0, high = h;
+    ll answer = high;
+    while (low <= high) {
+      ll mid = low + (high - low) / 2;
+      ll harm = 0;
+      for (int i = 1; i < input.size(); ++i) {
+        harm += min(input[i] * 1ll - input[i - 1], mid);
+      }
+      if (harm >= h) {
+        answer = min(answer, mid);
+        high = mid - 1;
+      } else {
+        low = mid + 1;
+      }
+    }
+    cout << answer << endl;
   }
 }

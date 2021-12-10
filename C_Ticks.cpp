@@ -31,18 +31,19 @@ typedef vector<ll> vl;
 typedef vector<int> vi;
 typedef vector<vector<int> > vvi;
 typedef vector<vector<ll> > vvl;
-bool analyze(vector<vector<char> > &ticks, int x, int y,int k) {
+bool analyze(vector<vector<char> > &ticks, int x, int y, int k) {
   int n = ticks.size();
   int m = ticks[0].size();
   int i = x;
   int j = y;
   bool valid_tick = true;
-  int left_length 
+  int left_length = 0;
+  int right_length = 0;
   while (i >= 0 and j >= 0) {
     if (ticks[i][j] == '.') {
-      valid_tick = false;
       break;
     } else {
+      ++left_length;
       --i;
       --j;
     }
@@ -51,12 +52,15 @@ bool analyze(vector<vector<char> > &ticks, int x, int y,int k) {
   j = y;
   while (i >= 0 and j < m) {
     if (ticks[i][j] == '.') {
-      valid_tick = false;
       break;
     } else {
+      ++right_length;
       --i;
       ++j;
     }
+  }
+  if (k > min(left_length - 1, right_length - 1)) {
+    valid_tick = false;
   }
   return valid_tick;
 }
@@ -66,7 +70,7 @@ int mark(vector<vector<char> > &ticks, int x, int y) {
   int i = x;
   int j = y;
   int marked_ticks = 0;
-  while (i >= 0 and j >= 0) {
+  while (i >= 0 and j >= 0 and ticks[i][j] != '.') {
     if (ticks[i][j] == '*') {
       ++marked_ticks;
     }
@@ -75,17 +79,17 @@ int mark(vector<vector<char> > &ticks, int x, int y) {
     --i;
     --j;
   }
-  i=x;
-  j=y;
-  while (i >= 0 and j < m) {
-      if (ticks[i][j] == '*') {
+  i = x;
+  j = y;
+  while (i >= 0 and j < m and ticks[i][j] != '.') {
+    if (ticks[i][j] == '*') {
       ++marked_ticks;
     }
     ticks[i][j] = '$';
     --i;
     ++j;
   }
-  return marked_ticks ;
+  return marked_ticks;
 }
 int main() {
   ios_base::sync_with_stdio(false);
@@ -117,18 +121,24 @@ int main() {
       for (int i = k; i < n; ++i) {
         for (int j = 0; j < m; ++j) {
           if (ticks[i][j] != '.') {
-            bool valid_tick = analyze(ticks, i, j,k);
+            bool valid_tick = analyze(ticks, i, j, k);
             if (valid_tick) {
               encountered_ticks += mark(ticks, i, j);
             }
           }
         }
       }
+      if (encountered_ticks == total_tick_cells) {
+        cout << "YES" << endl;
+      } else {
+        cout << "NO" << endl;
+      }
     }
-    if (encountered_ticks == total_tick_cells) {
-      cout << "YES" << endl;
-    } else {
-      cout << "NO" << endl;
-    }
+    // for (int i = 0; i < n; ++i) {
+    //   for (int j = 0; j < m; ++j) {
+    //     cout << ticks[i][j] << " ";
+    //   }
+    //   cout << endl;
+    // }
   }
 }

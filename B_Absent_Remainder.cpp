@@ -41,18 +41,15 @@ int main() {
       int tc;
   cin >> tc;
   while (tc--) {
-    int n, m, k;
-    cin >> n >> m >> k;
-    if (m == 0) {
-      cout << (k > 1 ? "YES" : "NO") << endl;
-    } else if (m < (n - 1)) {
-      cout << "NO"<<endl;
-    } else if (m >= (n - 1) and m < (n * (n - 1) / 2)) {
-      cout << (k > 3 ? "YES" : "NO") << endl;
-    } else if (m == (n * (n - 1) / 2)) {
-      cout << (k > 2 ? "YES" : "NO") << endl;
-    } else {
-      cout << "NO" << endl;
+    int n;
+    cin >> n;
+    vector<int> input(n);
+    for (int i = 0; i < n; ++i) {
+      cin >> input[i];
+    }
+    sort(input.begin(), input.end());
+    for (int i = 1; i <= (n / 2); ++i) {
+        cout<<input[i]<<" "<<input[0]<<endl;
     }
   }
 }
