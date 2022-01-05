@@ -1,8 +1,6 @@
 #pragma GCC optimize("Ofast")
 #pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
 #pragma GCC optimize("unroll-loops")
-#include <bits/stdc++.h>
-
 #include <algorithm>
 #include <chrono>
 #include <cmath>
@@ -20,6 +18,7 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
+#define endl "\n"
 
 using namespace std;
 
@@ -27,48 +26,44 @@ typedef long long ll;
 typedef long double ld;
 typedef pair<int, int> p32;
 typedef pair<ll, ll> p64;
-typedef pair<double, double> pdd;
-typedef vector<ll> v64;
-typedef vector<int> v32;
-typedef vector<vector<int> > vv32;
-typedef vector<vector<ll> > vv64;
-typedef vector<vector<p64> > vvp64;
-typedef vector<p64> vp64;
-typedef vector<p32> vp32;
-#define fast_cin()                  \
-  ios_base::sync_with_stdio(false); \
-  cin.tie(NULL);                    \
-  cout.tie(NULL)
-#define all(x) (x).begin(), (x).end()
-#define sz(x) ((ll)(x).size())
-#define endl "\n"
-#define debug(x) cout << #x << " " << x << endl;
+typedef vector<ll> vl;
+typedef vector<int> vi;
+typedef vector<vector<int> > vvi;
+typedef vector<vector<ll> > vvl;
 
-void solve() {
-  int n;
-  cin >> n;
-  string input;
-  cin >> input;
-  int i = 1;
-  while (i < n and input[i] <= input[i - 1]) {
-    ++i;
-  }
-  int x = i-1;
-  int y=i-1;
-  while(input[y]==input[x]){
-      --y;
-  }
-  y++;
-  string temp = input.substr(0, y+1);
-  string temp2 = temp;
-  reverse(temp.begin(), temp.end());
-  cout<<temp2+temp<<endl;
-}
 int main() {
-  fast_cin();
-  ll t;
-  cin >> t;
-  for (int it = 1; it <= t; it++) {
-    solve();
-  }
+  ios_base::sync_with_stdio(false);
+  cin.tie(nullptr);
+#ifdef D_DEBUG
+  freopen("input.txt", "r", stdin)
+#endif
+    int tc;
+    cin>>tc;
+    while(tc--){
+        int n;
+        cin>>n;
+        string input;
+        cin>>input;
+        bool two_characters = false;
+        char first_character = input[0];
+        int i=1;
+        while(i<n and input[i-1]>=input[i]){
+            if(input[i]!=first_character){
+                two_characters=true;
+            }
+            ++i;
+        }
+        if(n==1){
+            cout<<first_character<<first_character<<endl;
+        }
+        else if(input[1]==first_character){
+            cout<<first_character<<first_character<<endl;
+        }
+        else{
+            string lexicographically_smallest_string = input.substr(0,i);
+            cout<<lexicographically_smallest_string;
+            reverse(lexicographically_smallest_string.begin(),lexicographically_smallest_string.end());
+            cout<<lexicographically_smallest_string<<endl;
+        }
+    }
 }

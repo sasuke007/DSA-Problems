@@ -1,6 +1,3 @@
-#pragma GCC optimize("Ofast")
-#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
-#pragma GCC optimize("unroll-loops")
 #include <algorithm>
 #include <chrono>
 #include <cmath>
@@ -41,33 +38,21 @@ int main() {
   int tc;
   cin >> tc;
   while (tc--) {
-    ll n, k, x;
-    cin >> n >> k >> x;
-    string input;
-    cin >> input;
-    x--;
-    reverse(input.begin(), input.end());
-    string answer;
+      int n=7;
+    vector<int> input(n);
     for (int i = 0; i < n; ++i) {
-      char val = input[i];
-      if (val == 'a') {
-        answer += 'a';
-      } else {
-        int j = i;
-        int count = 0;
-        while (j < n and input[j] == input[i]) {
-          ++count;
-          ++j;
+      cin >> input[i];
+    }
+    int sum = input[n - 1];
+    for (int i = 0; i < n - 2; ++i) {
+      for (int j = i + 1; j < n - 1; ++j) {
+        for (int k = j + 1; k < n; ++k) {
+          if (input[i] + input[j] + input[k] == sum) {
+            cout << input[i] << " " << input[j] << " " << input[k] << endl;
+            break;
+          }
         }
-        i = j - 1;
-        ll add_b = x % (count * k + 1);
-        for (ll k = 0; k < add_b; ++k) {
-          answer += 'b';
-        }
-        x /= (count * k + 1);
       }
     }
-    reverse(answer.begin(),answer.end());
-    cout<<answer<<endl;
   }
 }

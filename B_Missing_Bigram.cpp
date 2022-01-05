@@ -1,6 +1,3 @@
-#pragma GCC optimize("Ofast")
-#pragma GCC target("sse,sse2,sse3,ssse3,sse4,popcnt,abm,mmx,avx,avx2,fma")
-#pragma GCC optimize("unroll-loops")
 #include <algorithm>
 #include <chrono>
 #include <cmath>
@@ -35,29 +32,34 @@ typedef vector<vector<ll> > vvl;
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
-#ifdef D_DEBUG
-  freopen("input.txt", "r", stdin)
-#endif
-      int tc;
+  // #ifdef D_DEBUG
+  //   freopen("input.txt", "r", stdin);
+  // #endif
+  int tc;
   cin >> tc;
   while (tc--) {
-    int n, k;
-    cin >> n >> k;
-    vector<int> input(n);
-    for (int i = 0; i < n; ++i) {
+    int n;
+    cin >> n;
+    vector<string> input(n);
+    for (int i = 0; i < n - 2; ++i) {
       cin >> input[i];
     }
-    ll answer = 0;
-    sort(input.begin(),input.end());
-    int end =n-1;
-    int start = n- 2*k;
-    for(int i=0;i<start;++i){
-        answer+=input[i];
+    string answer;
+    answer += input[0][0];
+    bool added = false;
+    // cout << answer << endl;
+    for (int i = 1; i < n - 2; ++i) {
+      if (input[i][0] == input[i - 1][1]) {
+        answer += input[i][0];
+      } else {
+        added = true;
+        answer += input[i - 1][1];
+        answer += input[i][0];
+      }
     }
-    int mid = (start+end)/2;
-    int j=mid+1;
-    for(int i=start;i<=mid;++i,++j){
-        answer+=input[i]/input[j];
+    answer += input[n - 3][1];
+    if (!added) {
+        answer+='a';
     }
     cout << answer << endl;
   }

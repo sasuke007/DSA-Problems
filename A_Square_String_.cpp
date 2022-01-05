@@ -36,38 +36,24 @@ int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 #ifdef D_DEBUG
-  freopen("input.txt", "r", stdin);
+  freopen("input.txt", "r", stdin)
 #endif
-  int tc;
-  cin >> tc;
-  while (tc--) {
-    ll n, k, x;
-    cin >> n >> k >> x;
-    string input;
-    cin >> input;
-    x--;
-    reverse(input.begin(), input.end());
-    string answer;
-    for (int i = 0; i < n; ++i) {
-      char val = input[i];
-      if (val == 'a') {
-        answer += 'a';
-      } else {
-        int j = i;
-        int count = 0;
-        while (j < n and input[j] == input[i]) {
-          ++count;
-          ++j;
+    int tc;
+    cin>>tc;
+    while(tc--){
+        string input;
+        cin>>input;
+        int n=input.size();
+        if(n&1){
+            cout<<"NO"<<endl;
         }
-        i = j - 1;
-        ll add_b = x % (count * k + 1);
-        for (ll k = 0; k < add_b; ++k) {
-          answer += 'b';
+        else{
+            if(input.substr(0,n/2) == input.substr(n/2,n/2)){
+                cout<<"YES"<<endl;
+            }
+            else{
+                cout<<"NO"<<endl;
+            }
         }
-        x /= (count * k + 1);
-      }
     }
-    reverse(answer.begin(),answer.end());
-    cout<<answer<<endl;
-  }
 }

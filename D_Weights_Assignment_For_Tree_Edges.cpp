@@ -31,43 +31,49 @@ typedef vector<ll> vl;
 typedef vector<int> vi;
 typedef vector<vector<int> > vvi;
 typedef vector<vector<ll> > vvl;
-
+void solve() {
+  int n;
+  cin >> n;
+  int root;
+  vector<int> tree(n);
+  for (int i = 0; i < n; ++i) {
+    cin >> tree[i];
+    if (tree[i] == (i + 1)) {
+      root = i+1;
+    }
+  }
+  vector<int> permutation(n);
+  for (int i = 0; i < n; ++i) {
+    cin >> permutation[i];
+  }
+  if (permutation[0] != root) {
+    cout << -1 << endl;
+    return;
+  }
+  vector<int> distance(n+1, -1);
+  distance[permutation[0]] = 0;
+  for (int i = 1; i < n; ++i) {
+    int node = permutation[i];
+    if (distance[tree[node-1]] == -1) {
+      cout << -1 << endl;
+      return;
+    }
+    distance[permutation[i]]=distance[permutation[i-1]]+1;
+  }
+  for(int i=0;i<n;++i){
+      cout<<distance[i+1] -distance[tree[i]]<<" ";
+  }
+  cout<<endl;
+}
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
 #ifdef D_DEBUG
-  freopen("input.txt", "r", stdin);
+  freopen("input.txt", "r", stdin)
 #endif
-  int tc;
+      int tc;
   cin >> tc;
   while (tc--) {
-    ll n, k, x;
-    cin >> n >> k >> x;
-    string input;
-    cin >> input;
-    x--;
-    reverse(input.begin(), input.end());
-    string answer;
-    for (int i = 0; i < n; ++i) {
-      char val = input[i];
-      if (val == 'a') {
-        answer += 'a';
-      } else {
-        int j = i;
-        int count = 0;
-        while (j < n and input[j] == input[i]) {
-          ++count;
-          ++j;
-        }
-        i = j - 1;
-        ll add_b = x % (count * k + 1);
-        for (ll k = 0; k < add_b; ++k) {
-          answer += 'b';
-        }
-        x /= (count * k + 1);
-      }
-    }
-    reverse(answer.begin(),answer.end());
-    cout<<answer<<endl;
+    solve();
   }
 }
