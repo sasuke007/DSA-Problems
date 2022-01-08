@@ -97,7 +97,7 @@ int solve(vector<vector<int> > &A) {
 int main() {
   ios_base::sync_with_stdio(false);
   cin.tie(nullptr);
-#ifdef D_DEBUG
+#ifdef _DEBUG
   freopen("input.txt", "r", stdin);
 #endif
   int n, m;
