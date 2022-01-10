@@ -65,7 +65,7 @@ int main() {
         if (first == second) {
           answer += (freq[first] * 1ll * (freq[first] - 1)) / 2;
         } else {
-          answer += freq[first] * 1ll* freq[second];
+          answer += freq[first] * 1ll * freq[second];
         }
         freq[first] = 0;
       }
