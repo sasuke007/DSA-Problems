@@ -30,7 +30,22 @@ typedef vector<vector<int> > vvi;
 typedef vector<vector<ll> > vvl;
 
 void solve() {
-  cout<<"hello world"<<endl;
+    int n;
+    cin>>n;
+    unordered_map<int,vector<int> > pos;
+    for(int i=0;i<n;++i){
+        int elem;
+        cin>>elem;
+        pos[elem].push_back(i);
+    }
+    int answer = -1;
+    for(auto it=pos.begin();it!=pos.end();++it){
+        int len = it->second.size();
+        for(int i=0;i<len-1;++i){
+            answer = max(answer,n-(it->second[i+1] - it->second[i]));
+        }
+    }
+    cout<<answer<<endl;
 }
 int main() {
   ios_base::sync_with_stdio(false);

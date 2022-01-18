@@ -30,7 +30,26 @@ typedef vector<vector<int> > vvi;
 typedef vector<vector<ll> > vvl;
 
 void solve() {
-  cout<<"hello world"<<endl;
+  int n, l;
+  cin >> n >> l;
+  vector<int> input(n);
+  for (int i = 0; i < n; ++i) {
+    cin >> input[i];
+  }
+  int answer =0;
+  for (int i = 0; i < 32; ++i) {
+    int ones = 0, zeros = 0;
+    for (int j = 0; j < n; ++j) {
+      if ((input[j] & (1 << i)) != 0)
+        ++ones;
+      else
+        ++zeros;
+    }
+    if(ones>zeros){
+        answer|=(1<<i);
+    }
+  }
+  cout<<answer<<endl;
 }
 int main() {
   ios_base::sync_with_stdio(false);
