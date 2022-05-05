@@ -1,5 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/DSA_Problems.dir/codeforces/unequal_array.cpp.obj"
+  "CMakeFiles/DSA_Problems.dir/codeforces/unequal_array.cpp.obj.d"
   "CMakeFiles/DSA_Problems.dir/main.cpp.obj"
+  "CMakeFiles/DSA_Problems.dir/main.cpp.obj.d"
   "DSA_Problems.exe"
   "DSA_Problems.exe.manifest"
   "DSA_Problems.pdb"

@@ -11,20 +11,20 @@
 				<Option working_dir="E:/Github.com/DSA-Problems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="E:/Github.com/DSA-Problems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DSA_Problems">
@@ -34,19 +34,19 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include/c++/11.1.0"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include/c++/11.1.0/x86_64-w64-mingw32"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include/c++/11.1.0/backward"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/include"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/include-fixed"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 DSA_Problems"/>
-					<CompileFile command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 DSA_Problems"/>
+					<CompileFile command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="DSA_Problems/fast">
@@ -56,32 +56,35 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include/c++/11.1.0"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include/c++/11.1.0/x86_64-w64-mingw32"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include/c++/11.1.0/backward"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/include"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../include"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/include-fixed"/>
-					<Add directory="d:\softwares\mingw64\bin\../lib/gcc/x86_64-w64-mingw32/11.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 DSA_Problems/fast"/>
-					<CompileFile command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 DSA_Problems/fast"/>
+					<CompileFile command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="E:/Github.com/DSA-Problems/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/softwares/mingw64/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/213.7172.20/bin/mingw/bin/mingw32-make.exe -f &quot;E:/Github.com/DSA-Problems/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/Github.com/DSA-Problems/codeforces/unequal_array.cpp">
+			<Option target="DSA_Problems"/>
+		</Unit>
 		<Unit filename="E:/Github.com/DSA-Problems/main.cpp">
 			<Option target="DSA_Problems"/>
 		</Unit>

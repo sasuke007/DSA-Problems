@@ -1,15 +1,15 @@
+
+# Consider dependencies only in project.
+set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
+
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "CXX"
   )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/Github.com/DSA-Problems/main.cpp" "E:/Github.com/DSA-Problems/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
+# The set of dependency files which are needed:
+set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "E:/Github.com/DSA-Problems/codeforces/unequal_array.cpp" "CMakeFiles/DSA_Problems.dir/codeforces/unequal_array.cpp.obj" "gcc" "CMakeFiles/DSA_Problems.dir/codeforces/unequal_array.cpp.obj.d"
+  "E:/Github.com/DSA-Problems/main.cpp" "CMakeFiles/DSA_Problems.dir/main.cpp.obj" "gcc" "CMakeFiles/DSA_Problems.dir/main.cpp.obj.d"
   )
 
 # Targets to which this target links.
