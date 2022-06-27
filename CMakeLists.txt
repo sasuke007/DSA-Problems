@@ -3,4 +3,4 @@ project(DSA_Problems)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(DSA_Problems main.cpp)
+add_executable(DSA_Problems main.cpp "daily problems atomic habits/Circle_game.cpp" "daily problems atomic habits/Circle_game.h")

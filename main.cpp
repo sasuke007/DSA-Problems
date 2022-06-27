@@ -23,26 +23,19 @@ int main() {
         for(int i=0;i<n;++i){
             cin>>input[i];
         }
-        if(n==1){
-            cout<<-1<<endl;
-            continue;
+        if(n%2!=0){
+            cout<<"Mike"<<endl;
         }
-        vector<int> answer(n);
-        for(int i=0;i<n;++i){
-            answer[i]=i+1;
-        }
-        for(int i=0;i<n-1;++i){
-            if(input[i]==answer[i]){
-                swap(answer[i],answer[i+1]);
+        else{
+            int minimum = *min_element(input.begin(),input.end());
+            int index = find(input.begin(),input.end(),minimum) - input.begin();
+            if(index%2==0){
+                cout<<"Joe"<<endl;
+            }
+            else{
+                cout<<"Mike"<<endl;
             }
         }
-        if(input[n-1]==answer[n-1]){
-            swap(answer[n-1],answer[n-2]);
-        }
-        for(int i=0;i<n;++i){
-            cout<<answer[i]<<" ";
-        }
-        cout<<endl;
     }
 }
 
