@@ -23,19 +23,20 @@ int main() {
         for(int i=0;i<n;++i){
             cin>>input[i];
         }
-        if(n%2!=0){
-            cout<<"Mike"<<endl;
-        }
-        else{
-            int minimum = *min_element(input.begin(),input.end());
-            int index = find(input.begin(),input.end(),minimum) - input.begin();
-            if(index%2==0){
-                cout<<"Joe"<<endl;
-            }
-            else{
-                cout<<"Mike"<<endl;
+        vector<int> zero_positions;
+        zero_positions.push_back(0);
+        for(int i=0;i<n;++i){
+            if(input[i]==0){
+                zero_positions.push_back(i+1);
             }
         }
+        zero_positions.push_back(n+1);
+        int count = 0;
+        for(int i=0;i<zero_positions.size()-1;++i){
+            if(zero_positions[i+1]-zero_positions[i]>1)
+                ++count;
+        }
+        cout<<min(count,2)<<endl;
     }
 }
 

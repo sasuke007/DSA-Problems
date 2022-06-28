@@ -13,7 +13,7 @@
 #define endl "\n"
 using namespace std;
 
-int main() {
+int circle_game() {
     int tc;
     cin>>tc;
     while(tc--){
