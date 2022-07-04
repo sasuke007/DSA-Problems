@@ -17,7 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="tracking code forces questions also.">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="gameberry labs interview questions .">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" afterDir="false" />
@@ -96,7 +96,8 @@
       <workItem from="1653909548761" duration="1220000" />
       <workItem from="1655552714148" duration="1403000" />
       <workItem from="1655718492704" duration="8891000" />
-      <workItem from="1656848196808" duration="2000" />
+      <workItem from="1656848196808" duration="824000" />
+      <workItem from="1656935069945" duration="2013000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -105,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624083218239</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gameberry labs interview questions .">
+      <created>1656848307463</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656848307463</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +144,19 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dsa questions to clion" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dsa questions to clion" />
+    <MESSAGE value="gameberry labs interview questions ." />
+    <option name="LAST_COMMIT_MESSAGE" value="gameberry labs interview questions ." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>21</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
