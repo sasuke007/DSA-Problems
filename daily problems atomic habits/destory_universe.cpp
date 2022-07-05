@@ -38,5 +38,4 @@ int main() {
         }
         cout<<min(count,2)<<endl;
     }
-}
 
