@@ -17,11 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="gameberry labs interview questions .">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="shoe shuffling codeforces 1000.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DSA_Problems.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DSA_Problems.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -97,7 +94,8 @@
       <workItem from="1655552714148" duration="1403000" />
       <workItem from="1655718492704" duration="8891000" />
       <workItem from="1656848196808" duration="824000" />
-      <workItem from="1656935069945" duration="2013000" />
+      <workItem from="1656935069945" duration="4168000" />
+      <workItem from="1657714798018" duration="3651000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -113,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656848307463</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="shoe shuffling codeforces 1000.">
+      <created>1656941405805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656941405805</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,18 +150,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dsa questions to clion" />
     <MESSAGE value="gameberry labs interview questions ." />
-    <option name="LAST_COMMIT_MESSAGE" value="gameberry labs interview questions ." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="shoe shuffling codeforces 1000." />
+    <option name="LAST_COMMIT_MESSAGE" value="shoe shuffling codeforces 1000." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
