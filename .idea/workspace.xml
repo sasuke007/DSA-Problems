@@ -14,9 +14,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="solved codeforces 900 problem.">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="solved codeforces 1000 problem.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily problems atomic habits/destory_universe.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/daily problems atomic habits/destory_universe.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +86,7 @@
       <workItem from="1625608078133" duration="2444000" />
       <workItem from="1655997513946" duration="3370000" />
       <workItem from="1656281440953" duration="2262000" />
-      <workItem from="1656880537899" duration="850000" />
+      <workItem from="1656880537899" duration="6283000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -117,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656386033310</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="solved codeforces 1000 problem.">
+      <created>1657013959454</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657013959454</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +143,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add dsa questions to clion" />
     <MESSAGE value="solved codeforces 900 problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="solved codeforces 900 problem." />
+    <MESSAGE value="solved codeforces 1000 problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="solved codeforces 1000 problem." />
   </component>
 </project>
