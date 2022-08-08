@@ -14,7 +14,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="solved codeforces 1100 problem.">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="solved codeforces 1200 problem.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -86,7 +86,7 @@
       <workItem from="1625608078133" duration="2444000" />
       <workItem from="1655997513946" duration="3370000" />
       <workItem from="1656281440953" duration="2262000" />
-      <workItem from="1656880537899" duration="12318000" />
+      <workItem from="1656880537899" duration="13807000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -144,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658999678307</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="solved codeforces 1200 problem.">
+      <created>1659395997121</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1659395997121</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,17 +173,7 @@
     <MESSAGE value="solved codeforces 900 problem." />
     <MESSAGE value="solved codeforces 1000 problem." />
     <MESSAGE value="solved codeforces 1100 problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="solved codeforces 1100 problem." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>53</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="solved codeforces 1200 problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="solved codeforces 1200 problem." />
   </component>
 </project>
