@@ -17,7 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="reverse pairs.">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="majority_element_2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -96,7 +96,7 @@
       <workItem from="1656935069945" duration="4168000" />
       <workItem from="1657714798018" duration="11548000" />
       <workItem from="1658265787750" duration="14658000" />
-      <workItem from="1660406136686" duration="4125000" />
+      <workItem from="1660406136686" duration="4881000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660418871705</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="majority_element_2">
+      <created>1660465858966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660465858966</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,20 +183,16 @@
     <MESSAGE value="not a cheap string 1000." />
     <MESSAGE value="x-sum 1000 codeforces." />
     <MESSAGE value="reverse pairs." />
-    <option name="LAST_COMMIT_MESSAGE" value="reverse pairs." />
+    <MESSAGE value="majority_element_2" />
+    <option name="LAST_COMMIT_MESSAGE" value="majority_element_2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>57</line>
+          <line>14</line>
           <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>60</line>
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
