@@ -64,6 +64,7 @@ int merge_sort(vector<int> &input,int start,int end){
     int inversions = merge(input,start,mid,end);
     return left_inversions+right_inversions+inversions;
 }
+
 int count_inverse_pairs(vector<int> &input){
     int n=input.size();
     int start=0,end=n-1;
