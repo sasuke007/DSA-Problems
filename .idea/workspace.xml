@@ -14,9 +14,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="generate permutaion with extra space.">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="reverse a linked list.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +85,7 @@
       <workItem from="1625608078133" duration="2444000" />
       <workItem from="1655997513946" duration="3370000" />
       <workItem from="1656281440953" duration="2262000" />
-      <workItem from="1656880537899" duration="15594000" />
+      <workItem from="1656880537899" duration="17042000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -158,7 +157,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659995055439</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="four sum problem.">
+      <created>1660463419702</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660463419702</updated>
+    </task>
+    <task id="LOCAL-00012" summary="reverse a linked list.">
+      <created>1660547741683</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660547741683</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +195,19 @@
     <MESSAGE value="solved codeforces 1100 problem." />
     <MESSAGE value="solved codeforces 1200 problem." />
     <MESSAGE value="generate permutaion with extra space." />
-    <option name="LAST_COMMIT_MESSAGE" value="generate permutaion with extra space." />
+    <MESSAGE value="four sum problem." />
+    <MESSAGE value="reverse a linked list." />
+    <option name="LAST_COMMIT_MESSAGE" value="reverse a linked list." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>51</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
