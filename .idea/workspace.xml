@@ -17,9 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="majority_element_2">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="longest_consecutive_sequence.cpp">
+      <change afterPath="$PROJECT_DIR$/interview series/add_two_numbers_as_linked_list.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1u9gFHxskEZg6XBop3mlwdT7qzA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -96,7 +98,7 @@
       <workItem from="1656935069945" duration="4168000" />
       <workItem from="1657714798018" duration="11548000" />
       <workItem from="1658265787750" duration="14658000" />
-      <workItem from="1660406136686" duration="4881000" />
+      <workItem from="1660406136686" duration="7534000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -147,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660465858966</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="longest_consecutive_sequence.cpp">
+      <created>1660467576530</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660467576530</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -184,18 +193,8 @@
     <MESSAGE value="x-sum 1000 codeforces." />
     <MESSAGE value="reverse pairs." />
     <MESSAGE value="majority_element_2" />
-    <option name="LAST_COMMIT_MESSAGE" value="majority_element_2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>14</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="longest_consecutive_sequence.cpp" />
+    <option name="LAST_COMMIT_MESSAGE" value="longest_consecutive_sequence.cpp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
