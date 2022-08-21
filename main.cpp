@@ -16,23 +16,22 @@ int main() {
     ios_base::sync_with_stdio(0);
     cin.tie(0);
     cout.tie(0);
-    string input;
-    cin>>input;
-    string answer;
-    set<char> vowels={'A', 'O', 'Y', 'E', 'U', 'I','a','o','y','e','u','i'};
-    for(int i=0;i<input.size();++i){
-        char alphabet = input[i];
-        if(vowels.find(alphabet)!=vowels.end()){
-            continue;
+    int tc;
+    cin>>tc;
+    while(tc--){
+        int n;
+        cin>>n;
+        string layout;
+        cin>>layout;
+        int answer =0;
+        for(int i=0;i<n;++i){
+            if(layout[i]=='0'){
+                answer+=1;
+            }
+            else{
+                answer+=2;
+            }
         }
-        else if('A'<=alphabet and alphabet<='Z'){
-            answer+='.';
-            answer+=(alphabet+32);
-        }
-        else{
-            answer+='.';
-            answer+=alphabet;
-        }
+        cout<<answer<<endl;
     }
-    cout<<answer<<endl;
 }
