@@ -17,14 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="cp sheet problem 35.">
-      <change afterPath="$PROJECT_DIR$/Daily Problems Atomic Habits/petr_and_book.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Daily Problems Atomic Habits/present_from_lina.cpp" afterDir="false" />
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="cp sheet problem 40.">
+      <change afterPath="$PROJECT_DIR$/Daily Problems Atomic Habits/partition_equal_subset_sum.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DSA_Problems.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DSA_Problems.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +99,7 @@
       <workItem from="1656935069945" duration="4168000" />
       <workItem from="1657714798018" duration="11548000" />
       <workItem from="1658265787750" duration="14658000" />
-      <workItem from="1660406136686" duration="27263000" />
+      <workItem from="1660406136686" duration="28683000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -204,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660912143061</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cp sheet problem 40.">
+      <created>1661073583357</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1661073583357</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +250,8 @@
     <MESSAGE value="cp sheet problem 4-5." />
     <MESSAGE value="cp sheet problem 30." />
     <MESSAGE value="cp sheet problem 35." />
-    <option name="LAST_COMMIT_MESSAGE" value="cp sheet problem 35." />
+    <MESSAGE value="cp sheet problem 40." />
+    <option name="LAST_COMMIT_MESSAGE" value="cp sheet problem 40." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

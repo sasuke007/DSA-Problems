@@ -21,17 +21,22 @@ int main() {
     while(tc--){
         int n;
         cin>>n;
-        string layout;
-        cin>>layout;
-        int answer =0;
+        vector<int> input(n);
         for(int i=0;i<n;++i){
-            if(layout[i]=='0'){
-                answer+=1;
-            }
-            else{
-                answer+=2;
-            }
+            cin>>input[i];
         }
-        cout<<answer<<endl;
+        sort(input.begin(),input.end());
+        if(input[1]!=0 or input[n-2]!=0){
+            cout<<"NO"<<endl;
+        }
+        else if(input[n-1]==0 or input[0]==0){
+            cout<<"YES"<<endl;
+        }
+        else if(input[n-1]+input[0]==0){
+            cout<<"YES"<<endl;
+        }
+        else{
+            cout<<
+        }
     }
 }
