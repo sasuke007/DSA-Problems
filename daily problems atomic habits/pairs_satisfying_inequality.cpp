@@ -62,17 +62,23 @@ int main() {
         for(int i=0;i<n;++i){
             cin>>input[i];
         }
-        sort(input.begin(),input.end());
-        if(input[1]!=0 or input[n-2]!=0){
-            cout<<"NO";
+        vector<int> prefix_sum(n+1,0);
+        for(int i=0;i<n;++i){
+            if(input[i]<(i+1)){
+                prefix_sum[i+1]=prefix_sum[i]+1;
+            }
+            else{
+                prefix_sum[i+1]=prefix_sum[i];
+            }
         }
-        else if(input[0]!=0 and input[n-1]!=0 and (input[0]+input[n-1])!=0){
-            cout<<"NO";
+        long long answer =0;
+        for(int i=0;i<n;++i){
+            if(input[i]<(i+1)){
+                int val=input[i];
+                answer+=(val-1>=0?prefix_sum[val-1]:0);
+            }
         }
-        else{
-            cout<<"YES";
-        }
-        cout<<endl;
+        cout<<answer<<endl;
     }
 }
 
