@@ -17,8 +17,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="cp sheet problem 40.">
-      <change afterPath="$PROJECT_DIR$/Daily Problems Atomic Habits/partition_equal_subset_sum.cpp" afterDir="false" />
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="partition equal subset sum.">
+      <change afterPath="$PROJECT_DIR$/interview series/longest_common_subsequence.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview series/longest_incresing_subsequence.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interview series/parititon_equal_subset_sum.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -99,7 +101,7 @@
       <workItem from="1656935069945" duration="4168000" />
       <workItem from="1657714798018" duration="11548000" />
       <workItem from="1658265787750" duration="14658000" />
-      <workItem from="1660406136686" duration="28683000" />
+      <workItem from="1660406136686" duration="31468000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -206,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661073583357</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="partition equal subset sum.">
+      <created>1661360119626</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1661360119627</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +260,8 @@
     <MESSAGE value="cp sheet problem 30." />
     <MESSAGE value="cp sheet problem 35." />
     <MESSAGE value="cp sheet problem 40." />
-    <option name="LAST_COMMIT_MESSAGE" value="cp sheet problem 40." />
+    <MESSAGE value="partition equal subset sum." />
+    <option name="LAST_COMMIT_MESSAGE" value="partition equal subset sum." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
