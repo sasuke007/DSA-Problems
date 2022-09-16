@@ -203,7 +203,132 @@ CMakeFiles/DSA_Problems.dir/main.cpp.obj: ../main.cpp \
   C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/riemann_zeta.tcc \
   C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/set \
   C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_set.h \
-  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_multiset.h
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_multiset.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/stdc++.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/assert.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cfloat \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/float.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ciso646 \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/climits \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/csetjmp \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/setjmp.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/csignal \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdarg \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/stdarg.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstddef \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/string.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ccomplex \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/complex \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cfenv \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fenv.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/fenv.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cinttypes \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/inttypes.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdalign \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdalign.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdbool \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctgmath \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cuchar \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/uchar.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bitset \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stream_iterator.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/concurrence.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stack \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_stack.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/valarray \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_array.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_array.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_before.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/slice_array.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_after.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/gslice.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/gslice_array.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/mask_array.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/indirect_array.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/atomic \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/codecvt \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_mutex.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_lock.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/forward_list \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/forward_list.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/forward_list.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/future \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/mutex \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_futex.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_thread.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/regex \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_constants.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_error.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.tcc \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/scoped_allocator \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/thread \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/this_thread_sleep.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeindex \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/shared_mutex \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/any \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/charconv \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/filesystem \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_path.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/optional \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/enable_special_members.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory_resource \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator_args.h \
+  C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/variant
 
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/numeric_traits.h:
@@ -212,6 +337,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stringfwd.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/parse_numbers.h:
+
 ../main.cpp:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/debug.h:
@@ -219,6 +346,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/cpu_defines.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/stdio.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/_mingw_stdarg.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_algorithm_defs.h:
 
@@ -240,6 +369,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/cpp_type_traits.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/float.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ostream:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iosfwd:
@@ -252,9 +383,13 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwchar:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/gslice_array.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable_policy.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/postypes.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_constants.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/_mingw.h:
 
@@ -263,6 +398,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/corecrt.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++locale.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cuchar:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdint.h:
 
@@ -274,19 +411,31 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/new:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.tcc:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/_mingw_secapi.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/string.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/vadefs.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/crtdefs.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory_resource:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stdexcept:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/corecrt_stdio_config.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_array.tcc:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/corecrt_wstdlib.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/_mingw_off_t.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/mask_array.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/inttypes.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_abs.h:
 
@@ -300,9 +449,13 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/debug/assertions.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstddef:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/sec_api/wchar_s.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/stdint.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_before.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/exception:
 
@@ -313,6 +466,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdint:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/exception_ptr.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/csignal:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_pair.h:
 
@@ -336,6 +491,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/nested_exception.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/sec_api/string_s.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/char_traits.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_algobase.h:
@@ -352,6 +509,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/concept_check.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/align.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/predefined_ops.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/localefwd.h:
@@ -359,6 +518,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_relops.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cctype:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward/auto_ptr.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/istream.tcc:
 
@@ -374,6 +535,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/pthread.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/regex:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cwctype:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/errno.h:
@@ -381,6 +544,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/sys/types.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/process.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fstream.tcc:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/corecrt_startup.h:
 
@@ -392,6 +557,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/limits.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdarg.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/signal.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/pthread_signal.h:
@@ -401,6 +568,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/_timeval.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/quoted_string.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
 
@@ -424,7 +593,11 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/new_allocator.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/c++io.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/ostream_insert.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_dir.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_multimap.h:
 
@@ -436,7 +609,11 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_string.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdbool.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/alloc_traits.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.tcc:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/alloc_traits.h:
 
@@ -451,6 +628,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/functional_hash.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/string_view.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_base.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/string_conversions.h:
 
@@ -470,6 +649,12 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cerrno:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/filesystem:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/random:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fenv.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/streambuf:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/charconv.h:
@@ -482,6 +667,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/system_error:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cassert:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/allocated_ptr.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/error_constants.h:
@@ -490,7 +677,13 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/assert.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/wctype.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iterator:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstring:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_base.h:
 
@@ -499,6 +692,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/ctype_inline.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/concurrence.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/basic_ios.tcc:
 
@@ -510,9 +705,13 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ext/aligned_buffer.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/stdc++.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/hashtable.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tuple:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/uchar.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/utility:
 
@@ -522,7 +721,11 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/invoke.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/complex:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/node_handle.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/valarray:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_numeric.h:
 
@@ -532,9 +735,13 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tree.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cfloat:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_map.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_uninitialized.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_mutex.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_vector.h:
 
@@ -558,21 +765,35 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_tempbuf.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/setjmp.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uniform_int_dist.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/functional:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/thread:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdarg:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/csetjmp:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/refwrap.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_function.h:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_executor.h:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/list:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_list.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/list.tcc:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/deque:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_ptr.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/deque.tcc:
 
@@ -586,6 +807,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/limits:
 
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/variant:
+
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/special_function_util.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/bessel_function.tcc:
@@ -593,6 +816,8 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/beta_function.tcc:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/ell_integral.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_base.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/tr1/exp_integral.tcc:
 
@@ -611,3 +836,153 @@ C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_set.h:
 
 C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_multiset.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/float.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ciso646:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/climits:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/stdarg.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/unique_lock.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctime:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_array.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ccomplex:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/sstream:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/codecvt:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/sstream.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cfenv:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/x86_64-w64-mingw32/include/fenv.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cinttypes:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdalign:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/stdalign.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/cstdbool:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ctgmath:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/forward_list.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bitset:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/fstream:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/codecvt.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/valarray_after.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/basic_file.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/iomanip:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/locale:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/time_members.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/messages_members.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_facets_nonio.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/locale_conv.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stream_iterator.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/memory:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_raw_storage_iter.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/shared_ptr_atomic.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_lockfree_defines.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/pstl/glue_memory_defs.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/stack:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/uses_allocator_args.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/stl_stack.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/slice_array.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/gslice.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/indirect_array.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/atomic:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/chrono:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/ratio:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/condition_variable:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/forward_list:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/forward_list.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/future:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/mutex:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_ops.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/atomic_futex.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/std_thread.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/random.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32/bits/opt_random.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_error.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_automaton.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_scanner.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex_compiler.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/regex.tcc:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/scoped_allocator:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/this_thread_sleep.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/typeindex:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/shared_mutex:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/any:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/charconv:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_fwd.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/fs_path.h:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/optional:
+
+C:/Users/Sasuke/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/221.5787.29/bin/mingw/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/bits/enable_special_members.h:
