@@ -17,18 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="min_path  dp.">
-      <change afterPath="$PROJECT_DIR$/Daily Problems Atomic Habits/Madoka_and_formal_statement.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/compiler_depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/compiler_depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/compiler_depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj.d" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/main.cpp.obj.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/DSA_Problems.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/DSA_Problems.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/DSA_Problems.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="dp series leetcode." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +99,7 @@
       <workItem from="1662622022655" duration="3091000" />
       <workItem from="1662980789038" duration="636000" />
       <workItem from="1663236501026" duration="2519000" />
-      <workItem from="1663337290646" duration="1000" />
+      <workItem from="1663337290646" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -245,7 +234,21 @@
       <option name="project" value="LOCAL" />
       <updated>1661795767835</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="dp series leetcode.">
+      <created>1663337325617</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663337325617</updated>
+    </task>
+    <task id="LOCAL-00021" summary="dp series leetcode.">
+      <created>1663337633922</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1663337633922</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -294,7 +297,8 @@
     <MESSAGE value="some dp questions." />
     <MESSAGE value="tree from inorder and preorder." />
     <MESSAGE value="min_path  dp." />
-    <option name="LAST_COMMIT_MESSAGE" value="min_path  dp." />
+    <MESSAGE value="dp series leetcode." />
+    <option name="LAST_COMMIT_MESSAGE" value="dp series leetcode." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
