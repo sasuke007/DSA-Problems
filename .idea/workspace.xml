@@ -17,7 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="leetcode array series.">
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="scaler questions.">
+      <change afterPath="$PROJECT_DIR$/interview series/smallest_xor.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,7 @@
       <workItem from="1662980789038" duration="636000" />
       <workItem from="1663236501026" duration="2519000" />
       <workItem from="1663337290646" duration="6071000" />
-      <workItem from="1663763211799" duration="1731000" />
+      <workItem from="1663763211799" duration="2985000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -272,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663789408183</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="scaler questions.">
+      <created>1664348800896</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1664348800896</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -323,7 +331,8 @@
     <MESSAGE value="min_path  dp." />
     <MESSAGE value="dp series leetcode." />
     <MESSAGE value="leetcode array series." />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode array series." />
+    <MESSAGE value="scaler questions." />
+    <option name="LAST_COMMIT_MESSAGE" value="scaler questions." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
