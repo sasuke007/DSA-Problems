@@ -39,9 +39,11 @@ int main() {
                 sufficient.emplace_back(eat[i], money[i]);
             }
         }
+        // ascending order
         sort(insufficient.begin(), insufficient.end(), [](pair<int, int> &a, pair<int, int> &b) {
             return a.first - a.second > b.first - b.second;
         });
+        // descending order
         sort(sufficient.begin(), sufficient.end(), [](pair<int, int> &a, pair<int, int> &b) {
             return a.first - a.second < b.first - b.second;
         });

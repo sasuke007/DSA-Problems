@@ -17,10 +17,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="scaler ta questions.">
-      <change afterPath="$PROJECT_DIR$/interview series/rain_water_trapped_n_space.cpp" afterDir="false" />
+    <list default="true" id="af533a3d-1300-4796-aca1-308af8489f59" name="Default Changelist" comment="codeforces weeknd contest.">
+      <change afterPath="$PROJECT_DIR$/interview series/first_missing_integer.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weeknd_contests/friends_and_restaurant.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/weeknd_contests/friends_and_restaurant.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +106,7 @@
       <workItem from="1663337290646" duration="6071000" />
       <workItem from="1663763211799" duration="5459000" />
       <workItem from="1664701918138" duration="6000" />
+      <workItem from="1664710400188" duration="1466000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -289,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664477188939</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="codeforces weeknd contest.">
+      <created>1664710537554</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664710537554</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,7 +350,8 @@
     <MESSAGE value="leetcode array series." />
     <MESSAGE value="scaler questions." />
     <MESSAGE value="scaler ta questions." />
-    <option name="LAST_COMMIT_MESSAGE" value="scaler ta questions." />
+    <MESSAGE value="codeforces weeknd contest." />
+    <option name="LAST_COMMIT_MESSAGE" value="codeforces weeknd contest." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
