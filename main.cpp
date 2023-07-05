@@ -13,56 +13,74 @@
 #define endl "\n"
 using namespace std;
 
-int dfs(vector<vector<int> > &tree,int root,int &cuts,vector<pair<int,int> > &paths){
-    int len=tree[root].size();
-    cuts+=max(0,len-1);
-    int nodes=0;
-    for(int i=0;i<tree[root].size();++i){
-        int child=tree[root][i];
-        int count=dfs(tree,child,cuts,paths);
-        if(i==0){
-            nodes=count;
-        }
-        if(i!=0) {
-            paths.emplace_back(child, count);
+vector<int> minDifference(vector<int> &nums, vector<vector<int>> &queries) {
+    vector<vector<int> > dp(nums.size() + 1, vector<int>(101, 0));
+    for (int i = 1; i < nums.size() + 1; ++i) {
+        for (int j = 0; j < 101; ++j) {
+            if (j == nums[i]) {
+                dp[i][j] = dp[i - 1][j] + 1;
+            } else {
+                dp[i][j] = dp[i - 1][j];
+            }
         }
     }
-    return nodes+1;
-}
-void traverse_path(vector<vector<int> >&tree,int node){
-    cout<<node<<" ";
-    if(tree[node].size()>0){
-        traverse_path(tree,tree[node][0]);
+    for (int i = 0; i < dp.size(); ++i) {
+        for (int j = 0; j < dp[0].size(); ++j) {
+            cout << dp[i][j] << " ";
+        }
+        cout << endl;
     }
+    vector<int> answer;
+    for (vector<int> query: queries) {
+        int minDifference = INT_MAX;
+        int l = query[0];
+        int r = query[1];
+        int s = r - l + 1;
+        int previousNumber = -1;
+        for (int i = 0; i < 100; ++i) {
+            int freq = dp[r + 1][i] - dp[l][i];
+            if (freq == 0) {
+                continue;
+            }
+            if (freq == s) {
+                minDifference = -1;
+                break;
+            } else {
+                if (previousNumber == -1) {
+                    previousNumber = i;
+                } else {
+                    minDifference = min(minDifference, i - previousNumber);
+                    previousNumber = i;
+                }
+            }
+        }
+        answer.push_back(minDifference);
+    }
+    return answer;
 }
+int solve(vector<vector<int> > arr){
+    int n=arr.size();
+    int m=arr[0].size();
+    int answer =0;
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            int upper = (i+1)*(j+1);
+            int lower = (n-i)*(m-j);
+            answer += upper * lower * arr[i][j];
+        }
+    }
+    return answer;
+}
+
 int main() {
-    int tc;
-    cin>>tc;
-    while(tc--){
-        int n;
-        cin>>n;
-        vector<vector<int> > tree(n+1);
-        int root=-1;
-        for(int i=1;i<=n;++i){
-            int val;
-            cin>>val;
-            if(val==i){
-                root=i;
-            }
-            else{
-                tree[val].push_back(i);
-            }
-        }
-        int cuts=1;
-        vector<pair<int,int> > paths;
-        int count = dfs(tree,root,cuts,paths);
-        paths.emplace_back(root,count);
-        cout<<cuts<<endl;
-        for(int i=0;i<paths.size();++i){
-            cout<<paths[i].second<<endl;
-            traverse_path(tree,paths[i].first);
-            cout<<endl;
+    int n,m;
+    cin>>n>>m;
+    vector<vector<int> > arr(n,vector<int>(m));
+    for(int i=0;i<n;++i){
+        for(int j=0;j<m;++j){
+            cin>>arr[i][j];
         }
     }
+    cout<<solve(arr);
 }
 
