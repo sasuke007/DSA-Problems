@@ -9,78 +9,110 @@
 #include <unordered_set>
 #include <cmath>
 #include<set>
+#include<stdio.h>
+#include<stdlib.h>
 
-#define endl "\n"
 using namespace std;
 
-vector<int> minDifference(vector<int> &nums, vector<vector<int>> &queries) {
-    vector<vector<int> > dp(nums.size() + 1, vector<int>(101, 0));
-    for (int i = 1; i < nums.size() + 1; ++i) {
-        for (int j = 0; j < 101; ++j) {
-            if (j == nums[i]) {
-                dp[i][j] = dp[i - 1][j] + 1;
-            } else {
-                dp[i][j] = dp[i - 1][j];
-            }
-        }
-    }
-    for (int i = 0; i < dp.size(); ++i) {
-        for (int j = 0; j < dp[0].size(); ++j) {
-            cout << dp[i][j] << " ";
-        }
-        cout << endl;
-    }
-    vector<int> answer;
-    for (vector<int> query: queries) {
-        int minDifference = INT_MAX;
-        int l = query[0];
-        int r = query[1];
-        int s = r - l + 1;
-        int previousNumber = -1;
-        for (int i = 0; i < 100; ++i) {
-            int freq = dp[r + 1][i] - dp[l][i];
-            if (freq == 0) {
-                continue;
-            }
-            if (freq == s) {
-                minDifference = -1;
-                break;
-            } else {
-                if (previousNumber == -1) {
-                    previousNumber = i;
-                } else {
-                    minDifference = min(minDifference, i - previousNumber);
-                    previousNumber = i;
-                }
-            }
-        }
-        answer.push_back(minDifference);
-    }
-    return answer;
-}
-int solve(vector<vector<int> > arr){
-    int n=arr.size();
-    int m=arr[0].size();
-    int answer =0;
-    for(int i=0;i<n;++i){
-        for(int j=0;j<m;++j){
-            int upper = (i+1)*(j+1);
-            int lower = (n-i)*(m-j);
-            answer += upper * lower * arr[i][j];
-        }
-    }
-    return answer;
+#define fastio() ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
+#define MOD 1000000007
+#define MOD1 998244353
+#define INF 1e18
+#define pb push_back
+#define ppb pop_back
+#define mp make_pair
+#define ff first
+#define ss second
+#define PI 3.141592653589793238462
+#define set_bits __builtin_popcountll
+#define sz(x) ((int)(x).size())
+#define all(x) (x).begin(), (x).end()
+#define endl "\n"
+
+typedef long long ll;
+typedef unsigned long long ull;
+typedef long double lld;
+// typedef tree<pair<int, int>, null_type, less<pair<int, int>>, rb_tree_tag, tree_order_statistics_node_update > pbds; // find_by_order, order_of_key
+
+#ifndef ONLINE_JUDGE
+#define debug(x) cerr << #x <<" "; _print(x); cerr << endl;
+#else
+#define debug(x)
+#endif
+
+void _print(ll t) { cerr << t; }
+
+void _print(int t) { cerr << t; }
+
+void _print(string t) { cerr << t; }
+
+void _print(char t) { cerr << t; }
+
+void _print(lld t) { cerr << t; }
+
+void _print(double t) { cerr << t; }
+
+void _print(ull t) { cerr << t; }
+
+template<class T, class V>
+void _print(pair<T, V> p) {
+    cerr << "{";
+    _print(p.ff);
+    cerr << ",";
+    _print(p.ss);
+    cerr << "}";
 }
 
-int main() {
-    int n,m;
-    cin>>n>>m;
-    vector<vector<int> > arr(n,vector<int>(m));
-    for(int i=0;i<n;++i){
-        for(int j=0;j<m;++j){
-            cin>>arr[i][j];
-        }
+template<class T>
+void _print(vector<T> v) {
+    cerr << "[ ";
+    for (T i: v) {
+        _print(i);
+        cerr << " ";
     }
-    cout<<solve(arr);
+    cerr << "]";
+}
+
+template<class T>
+void _print(set<T> v) {
+    cerr << "[ ";
+    for (T i: v) {
+        _print(i);
+        cerr << " ";
+    }
+    cerr << "]";
+}
+
+template<class T>
+void _print(multiset<T> v) {
+    cerr << "[ ";
+    for (T i: v) {
+        _print(i);
+        cerr << " ";
+    }
+    cerr << "]";
+}
+
+template<class T, class V>
+void _print(map<T, V> v) {
+    cerr << "[ ";
+    for (auto i: v) {
+        _print(i);
+        cerr << " ";
+    }
+    cerr << "]";
+}
+
+
+int main() {
+    fastio();
+
+#ifndef _DEBUG
+    freopen("output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("debug.txt", "w", stderr);
+#endif
+
+    cout<<"Hello World";
 }
 

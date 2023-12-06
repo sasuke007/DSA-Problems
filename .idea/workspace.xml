@@ -17,8 +17,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="leetcode dp series.">
+    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="Sum of all subarrays.">
+      <change afterPath="$PROJECT_DIR$/debug.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scaler/middle_element_of_linked_list.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Enormous_Input_Test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Enormous_Input_Test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +46,19 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="ozrfbfip" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1u9gFHxskEZg6XBop3mlwdT7qzA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -59,6 +72,8 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
@@ -66,7 +81,7 @@
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DSA_Problems" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="true" REDIRECT_INPUT_PATH="$PROJECT_DIR$/input.txt" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Problems" TARGET_NAME="DSA_Problems" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DSA_Problems" RUN_TARGET_NAME="DSA_Problems">
+    <configuration name="DSA_Problems" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-D_DEBUG" REDIRECT_INPUT="false" REDIRECT_INPUT_PATH="$PROJECT_DIR$/input.txt" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Problems" TARGET_NAME="DSA_Problems" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DSA_Problems" RUN_TARGET_NAME="DSA_Problems">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -89,7 +104,17 @@
       <workItem from="1661241768581" duration="2310000" />
       <workItem from="1663010306253" duration="2805000" />
       <workItem from="1663014731757" duration="3574000" />
-      <workItem from="1665132564460" duration="1000" />
+      <workItem from="1665132564460" duration="1974000" />
+      <workItem from="1666697837699" duration="637000" />
+      <workItem from="1674843792412" duration="16000" />
+      <workItem from="1674848274338" duration="2271000" />
+      <workItem from="1682254416211" duration="173000" />
+      <workItem from="1682254609284" duration="29000" />
+      <workItem from="1682254656535" duration="2147000" />
+      <workItem from="1687367624154" duration="1351000" />
+      <workItem from="1688498772950" duration="18666000" />
+      <workItem from="1697248314842" duration="571000" />
+      <workItem from="1699079885039" duration="3022000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -210,7 +235,35 @@
       <option name="project" value="LOCAL" />
       <updated>1664396221986</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="navi java prep.">
+      <created>1665132614939</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1665132614939</updated>
+    </task>
+    <task id="LOCAL-00019" summary="concatenated_words.java leetcode.">
+      <created>1674848925958</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1674848925958</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Search in a row wise and column wise sorted matrix.">
+      <created>1688567598178</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1688567598178</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Sum of all subarrays.">
+      <created>1688567674629</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1688567674629</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,17 +293,21 @@
     <MESSAGE value="codeforces 1300." />
     <MESSAGE value="leetcode dp." />
     <MESSAGE value="leetcode dp series." />
-    <option name="LAST_COMMIT_MESSAGE" value="leetcode dp series." />
+    <MESSAGE value="navi java prep." />
+    <MESSAGE value="concatenated_words.java leetcode." />
+    <MESSAGE value="Search in a row wise and column wise sorted matrix." />
+    <MESSAGE value="Sum of all subarrays." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sum of all subarrays." />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>38</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="arr[i][j]" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
