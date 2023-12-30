@@ -17,13 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="Sum of all subarrays.">
-      <change afterPath="$PROJECT_DIR$/debug.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scaler/middle_element_of_linked_list.cpp" afterDir="false" />
+    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="just a few more problems.">
+      <change afterPath="$PROJECT_DIR$/sde_sheet/set_max_zeroes.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Enormous_Input_Test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Enormous_Input_Test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +110,8 @@
       <workItem from="1687367624154" duration="1351000" />
       <workItem from="1688498772950" duration="18666000" />
       <workItem from="1697248314842" duration="571000" />
-      <workItem from="1699079885039" duration="3022000" />
+      <workItem from="1699079885039" duration="4664000" />
+      <workItem from="1703917648844" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -263,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688567674629</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="just a few more problems.">
+      <created>1701877145673</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1701877145673</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +301,8 @@
     <MESSAGE value="concatenated_words.java leetcode." />
     <MESSAGE value="Search in a row wise and column wise sorted matrix." />
     <MESSAGE value="Sum of all subarrays." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sum of all subarrays." />
+    <MESSAGE value="just a few more problems." />
+    <option name="LAST_COMMIT_MESSAGE" value="just a few more problems." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

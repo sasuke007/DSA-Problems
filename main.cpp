@@ -112,7 +112,6 @@ int main() {
     freopen("input.txt", "r", stdin);
     freopen("debug.txt", "w", stderr);
 #endif
-
-    cout<<"Hello World";
+    
 }
 
