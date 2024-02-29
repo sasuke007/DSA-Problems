@@ -18,7 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="[Arrays] maximum sum subarray.">
-      <change afterPath="$PROJECT_DIR$/sde_sheet/maximum_sum_subarray_follow_up.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sde_sheet/cp/or.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +110,7 @@
       <workItem from="1688498772950" duration="18666000" />
       <workItem from="1697248314842" duration="571000" />
       <workItem from="1699079885039" duration="4664000" />
-      <workItem from="1703917648844" duration="4649000" />
+      <workItem from="1703917648844" duration="5495000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -287,7 +287,14 @@
       <option name="project" value="LOCAL" />
       <updated>1704125563855</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="[Arrays] maximum sum subarray.">
+      <created>1708969903122</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1708969903122</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
