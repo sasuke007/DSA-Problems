@@ -17,8 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="cp or question.">
-      <change afterPath="$PROJECT_DIR$/sde_sheet/cp/lcm.go" afterDir="false" />
+    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="cp lmc.">
+      <change afterPath="$PROJECT_DIR$/sde_sheet/cp/even_array" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1688498772950" duration="18666000" />
       <workItem from="1697248314842" duration="571000" />
       <workItem from="1699079885039" duration="4664000" />
-      <workItem from="1703917648844" duration="6122000" />
+      <workItem from="1703917648844" duration="6765000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -300,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709219730714</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="cp lmc.">
+      <created>1709223548434</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1709223548434</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,7 +347,8 @@
     <MESSAGE value="[Arrays] pascal triangle." />
     <MESSAGE value="[Arrays] maximum sum subarray." />
     <MESSAGE value="cp or question." />
-    <option name="LAST_COMMIT_MESSAGE" value="cp or question." />
+    <MESSAGE value="cp lmc." />
+    <option name="LAST_COMMIT_MESSAGE" value="cp lmc." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

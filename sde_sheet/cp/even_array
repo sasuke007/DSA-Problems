@@ -1,0 +1,45 @@
+https://codeforces.com/problemset/problem/1367/B
+
+package main
+
+import (
+	"fmt"
+	"log"
+)
+
+func main() {
+	var tc int
+	_, err := fmt.Scan(&tc)
+	if err != nil {
+		return
+	}
+	for i := 0; i < tc; i++ {
+		var n int
+		_, err = fmt.Scan(&n)
+		if err != nil {
+			return
+		}
+		input := make([]int, n)
+		even, odd := 0, 0
+		diffParity := 0
+		for j := 0; j < n; j++ {
+			_, err = fmt.Scan(&input[j])
+			if err != nil {
+				log.Fatal()
+			}
+			if input[j]%2 == 0 {
+				even++
+			} else {
+				odd++
+			}
+			if input[j]%2 != 0 && j%2 == 0 {
+				diffParity++
+			}
+		}
+		if odd == n/2 {
+			fmt.Println(diffParity)
+		} else {
+			fmt.Println(-1)
+		}
+	}
+}
