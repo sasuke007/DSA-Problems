@@ -17,8 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="cp lmc.">
-      <change afterPath="$PROJECT_DIR$/sde_sheet/cp/even_array" afterDir="false" />
+    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="cp even array.">
+      <change afterPath="$PROJECT_DIR$/sde_sheet/cp/sequence_digit.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +110,7 @@
       <workItem from="1688498772950" duration="18666000" />
       <workItem from="1697248314842" duration="571000" />
       <workItem from="1699079885039" duration="4664000" />
-      <workItem from="1703917648844" duration="6765000" />
+      <workItem from="1703917648844" duration="7393000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -308,7 +308,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709223548434</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="cp even array.">
+      <created>1709308748255</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1709308748255</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +355,8 @@
     <MESSAGE value="[Arrays] maximum sum subarray." />
     <MESSAGE value="cp or question." />
     <MESSAGE value="cp lmc." />
-    <option name="LAST_COMMIT_MESSAGE" value="cp lmc." />
+    <MESSAGE value="cp even array." />
+    <option name="LAST_COMMIT_MESSAGE" value="cp even array." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
