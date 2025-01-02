@@ -23,9 +23,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="neetcode 150 | Group Anagrams.">
-      <change afterPath="$PROJECT_DIR$/neetcode150/two_sum.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neetcode150/two_sum.h" afterDir="false" />
+    <list default="true" id="5ed8f2d6-990c-47c8-ba45-be504e6e7a22" name="Changes" comment="neetcode 150 | Two sum.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -84,7 +82,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "C/C++ File.group_anagrams.h.executor": "Run",
-    "CMake Application.DSA_Problems.executor": "Run",
+    "CMake Application.DSA_Problems.executor": "Debug",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
@@ -107,11 +105,6 @@
       </method>
     </configuration>
     <configuration name="DSA_Problems" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-DONLINE_JUDGE" REDIRECT_INPUT="false" REDIRECT_INPUT_PATH="$PROJECT_DIR$/input.txt" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Problems" TARGET_NAME="DSA_Problems" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DSA_Problems" RUN_TARGET_NAME="DSA_Problems">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -167,7 +160,9 @@
       <workItem from="1733159870315" duration="239000" />
       <workItem from="1733160574154" duration="906000" />
       <workItem from="1733319138284" duration="1299000" />
-      <workItem from="1733943756762" duration="4728000" />
+      <workItem from="1733943756762" duration="8237000" />
+      <workItem from="1734416384808" duration="1709000" />
+      <workItem from="1735832456718" duration="3652000" />
     </task>
     <task id="LOCAL-00001" summary="add dsa questions to clion">
       <created>1624083218239</created>
@@ -394,7 +389,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733982081741</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="neetcode 150 | Two sum.">
+      <option name="closed" value="true" />
+      <created>1733984582204</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1733984582204</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +420,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="solved codeforces 900 problem." />
     <MESSAGE value="solved codeforces 1000 problem." />
     <MESSAGE value="solved codeforces 1100 problem." />
     <MESSAGE value="solved codeforces 1200 problem." />
@@ -442,9 +444,24 @@
     <MESSAGE value="cp sequence digit." />
     <MESSAGE value="cp non coprime partition." />
     <MESSAGE value="neetcode 150 | Group Anagrams." />
-    <option name="LAST_COMMIT_MESSAGE" value="neetcode 150 | Group Anagrams." />
+    <MESSAGE value="neetcode 150 | Two sum." />
+    <option name="LAST_COMMIT_MESSAGE" value="neetcode 150 | Two sum." />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>140</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/main.cpp</url>
+          <line>146</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="arr[i][j]" language="ObjectiveC" />
